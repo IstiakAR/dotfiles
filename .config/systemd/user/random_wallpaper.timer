@@ -1,0 +1,9 @@
+[Unit]
+Description=Run random_wallpaper.service every hour
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target

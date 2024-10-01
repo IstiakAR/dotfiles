@@ -1,0 +1,5 @@
+[Unit]
+Description=Change wallpaper randomly every hour
+
+[Service]
+ExecStart=/home/rhyme/.scripts/random_wallpaper.sh
