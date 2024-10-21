@@ -2,7 +2,7 @@
 
 ### Neccessay packages
 ```bash
-sudo pacman -S git btop zsh curl wget stow grim play cliphist dunst firefox-developer-edition kitty neovim nwg-look rofi waybar unzip swww swaybg thunar tree zed blueberry eslint_d eza eslint-language-server nm-connection-editor prettier reflector tidy rubucop vlc mpv ruby ruby-irb fzf ark zathura okular gimp btop w3m gtk2 gtk3 gtk4 qt5ct qt6ct fastfetch 
+sudo pacman -S git btop zsh curl wget stow grim cliphist dunst firefox-developer-edition kitty neovim nwg-look rofi waybar unzip swww swaybg thunar tree zed blueberry eslint_d eza eslint-language-server nm-connection-editor prettier reflector tidy rubocop vlc mpv ruby ruby-irb fzf ark zathura okular gimp btop w3m gtk2 gtk3 gtk4 qt5ct qt6ct fastfetch 
 ```
 
 ### Install yay
