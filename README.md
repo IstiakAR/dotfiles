@@ -31,4 +31,11 @@ chsh -s $(which zsh)
 
 [oh-my-zsh](https://ohmyz.sh/#install)
 
+[zsh-autosuggestions](git clone https://github.com/zsh-users/zsh-autosuggestions.git \
+${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+)
+
+[zsh-syntax-highlightning](git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+)
 
