@@ -1,11 +1,11 @@
 ## Installation
 
-# Neccessay packages
+### Neccessay packages
 ```bash
-sudo pacman -S git btop zsh curl wget stow grim play cliphist dunst firefox-developer-edition kitty neovim nwg-look rofi waybar unzip swww swaybg thunar tree zed blueberry eslint_d eza eslint-language-server nm-connection-editor prettier reflector tidy rubucop ruby ruby-irb fzf ark zathura okular gimp
+sudo pacman -S git btop zsh curl wget stow grim play cliphist dunst firefox-developer-edition kitty neovim nwg-look rofi waybar unzip swww swaybg thunar tree zed blueberry eslint_d eza eslint-language-server nm-connection-editor prettier reflector tidy rubucop ruby ruby-irb fzf ark zathura okular gimp btop w3m 
 ```
 
-# Install yay
+### Install yay
 ```bash
 cd ~/Downloads
 sudo pacman -S --needed git base-devel
@@ -14,17 +14,17 @@ cd yay
 makepkg -si
 ```
 
-# Install pacseek
+### Install pacseek
 ```bash
 yay -S pacseek
 ```
 
-# Install rest
+### Install rest
 ```bash
-yay -S pokemon-colorscripts-git 
+yay -S pokemon-colorscripts-git ani-cli wtf youtube-viewer
 ```
 
-# zsh & plugins 
+### zsh & plugins 
 bash```chsh -s $(which zsh) ```
 
 [oh-my-zsh](https://ohmyz.sh/#install)
