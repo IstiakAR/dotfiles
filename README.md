@@ -2,7 +2,7 @@
 
 # Neccessay packages
 ```bash
-sudo pacman -S git btop zsh curl wget stow grim play cliphist dunst firefox-developer-edition kitty neovim nwg-look rofi waybar unzip swww swaybg thunar tree zed blueberry eslint_d eza eslint-language-server nm-connection-editor prettier reflector tidy rubucop ruby ruby-irb fzf
+sudo pacman -S git btop zsh curl wget stow grim play cliphist dunst firefox-developer-edition kitty neovim nwg-look rofi waybar unzip swww swaybg thunar tree zed blueberry eslint_d eza eslint-language-server nm-connection-editor prettier reflector tidy rubucop ruby ruby-irb fzf ark zathura okular gimp
 ```
 
 # Install yay
@@ -32,5 +32,6 @@ bash```chsh -s $(which zsh) ```
 [zsh-interactive-cd](https://github.com/mrjohannchang/zsh-interactive-cd)
 
 [zsh-navigation-tools](https://github.com/z-shell/zsh-navigation-tools)
+
 [z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z)
 
