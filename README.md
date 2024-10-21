@@ -25,7 +25,9 @@ yay -S pokemon-colorscripts-git ani-cli wtf youtube-viewer
 ```
 
 ### zsh & plugins 
-```bash chsh -s $(which zsh)```
+```bash
+chsh -s $(which zsh)
+```
 
 [oh-my-zsh](https://ohmyz.sh/#install)
 
