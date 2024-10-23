@@ -21,7 +21,7 @@ yay -S pacseek
 
 ### Install rest
 ```bash
-yay -S pokemon-colorscripts-git ani-cli wtf youtube-viewer
+yay -S pokemon-colorscripts-git ani-cli wtf youtube-viewer hyprshade
 ```
 
 ### zsh & plugins 
