@@ -33,6 +33,7 @@ return {
         javascript = { "eslint_d" },
         -- https://github.com/zaach/jsonlint
         json = { "jsonlint" },
+        jsonc = { "jsonlint" },
         -- DISABLED: https://github.com/mpeterv/luacheck
         -- Was a problem with folke/neodev plugin
         -- lua = { "luacheck" },
@@ -77,8 +78,8 @@ return {
           -- print(string.format('event fired: %s', vim.inspect(ev)))
           -- print(vim.bo.filetype)
           if
-            (string.find(ev.file, ".github/workflows/") or string.find(ev.file, ".github/actions/"))
-            and vim.bo.filetype == "yaml"
+              (string.find(ev.file, ".github/workflows/") or string.find(ev.file, ".github/actions/"))
+              and vim.bo.filetype == "yaml"
           then
             lint.try_lint("actionlint")
           elseif vim.bo.filetype == "yaml" then

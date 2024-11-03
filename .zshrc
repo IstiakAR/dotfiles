@@ -71,17 +71,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( 
+plugins=(
     git
     archlinux
-    zsh-autosuggestions
-    zsh-syntax-highlighting
     themes
     dirhistory
     history
     zsh-interactive-cd
     zsh-navigation-tools
     z
+    zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -150,16 +150,15 @@ alias cdp='cd Documents/Calculator'
 alias weather='~/.scripts/weather'
 alias fd="cd ~ && cd \$(find . -type d | fzf)"
 alias bsync="sudo bt-dualboot --sync-all --no-backup"
-alias up="sudo pacman -Syu && yay -Syu && paru -Syu && sudo flatpak update"
+alias up="sudo pacman -Syu && yay -Syu && sudo flatpak update"
 alias yt="youtube-viewer"
 alias ytm="youtube-viewer -n --no-video-info --player=mpvt"
 alias wfdownloader="cd ~/WFDownloader && nohup java -jar WFDownloaderApp.jar & disown && exit"
 alias fileOnly="find . -maxdepth 1 -not -type d"
 
-alias nc='nvim ~/Documents/mains/main.c'
 alias ncpp='nvim ~/Documents/mains/main.cpp'
 alias ngo='nvim ~/Documents/mains/main.go'
-alias njava='nvim ~/Documents/mains/main.java'
+alias njava='nvim ~/Documents/mains/Main.java'
 alias njs='nvim ~/Documents/mains/main.js'
 alias nlua='nvim ~/Documents/mains/main.lua'
 alias npy='nvim ~/Documents/mains/main.py'
@@ -168,24 +167,9 @@ alias nrust='nvim ~/Documents/mains/main.rs'
 alias nts='nvim ~/Documents/mains/main.ts'
 alias nkt='nvim ~/Documents/mains/main.kt'
 
-alias na='nvim ~/Documents/mains/A.cpp'
-alias nb='nvim ~/Documents/mains/B.cpp'
-alias nc='nvim ~/Documents/mains/C.cpp'
-alias nd='nvim ~/Documents/mains/D.cpp'
-alias ne='nvim ~/Documents/mains/E.cpp'
-alias nf='nvim ~/Documents/mains/F.cpp'
-
-alias ra='cd ~/Documents/mains && g++ A.cpp -o main && ./main'
-alias rb='cd ~/Documents/mains && g++ B.cpp -o main && ./main'
-alias rc='cd ~/Documents/mains && g++ C.cpp -o main && ./main'
-alias rd='cd ~/Documents/mains && g++ D.cpp -o main && ./main'
-alias re='cd ~/Documents/mains && g++ E.cpp -o main && ./main'
-alias rf='cd ~/Documents/mains && g++ F.cpp -o main && ./main'
-
-# alias rc='cd ~/Documents/mains && g++ main.c -o main && ./main'
 alias rcpp='cd ~/Documents/mains && g++ main.cpp -o main && ./main'
 alias rgo='cd ~/Documents/mains && go run main.go'
-alias rjava='cd ~/Documents/mains && javac main.java && java main'
+alias rjava='cd ~/Documents/mains && javac Main.java && java Main'
 alias rjs='cd ~/Documents/mains && node main.js'
 alias rlua='cd ~/Documents/mains && lua main.lua'
 alias rpy='cd ~/Documents/mains && python main.py'
@@ -196,5 +180,6 @@ alias rkt='cd ~/Documents/mains && kotlinc main.kt && ./main'
 
 # Created by `pipx` on 2024-06-23 19:11:27
 export PATH="$PATH:/home/rhyme/.local/bin"
+export PATH="$PATH:/home/rhyme/.local/share/gem/ruby/3.3.0/bin"
 
 export EDITOR=nvim

@@ -10,7 +10,7 @@ configuration {
 }
 /* Config and colors ----------------------------------------------- */
 
-@import "default.rasi"
+ @import "default.rasi"
 
 /* Main Window ------------------------------------------------ */
 window {

@@ -1,3 +1,7 @@
+*{
+  all: unset;
+}
+
 window {
     font-family: SpaceMonoNerdFont;
     font-size: 14pt;

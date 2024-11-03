@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Wallpapers Path
-wallpaperDir="$HOME/Pictures/wallpaper"
+wallpaperDir="$HOME/Pictures/wallpapers"
 
 # Transition config
 FPS=60

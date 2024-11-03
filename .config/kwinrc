@@ -1,49 +1,20 @@
 [Desktops]
-Id_1=452e51bb-874a-466a-b1ff-8f6bbc37b7bc
-Id_2=35f693da-41d0-4ae1-a73a-e43d6f336c25
-Id_3=0b01f2c7-69c0-43f1-a45f-c69ff2230ac4
-Id_4=b21586e5-ecb2-4d01-bfd9-aa7080d9c383
-Id_5=95026f04-bf12-4916-8bf8-a95de0a91cb0
+Id_1=c5785781-4a05-4bc6-b6e8-0f620d3fc13d
+Id_2=aca92de3-24b6-4e5b-bf83-621507223ee1
+Id_3=0ecd8c99-53dc-46c0-948f-cd70f6fdabb0
 Name_2=New Desktop
 Name_3=New Desktop
-Name_4=New Desktop
-Name_5=New Desktop
-Number=5
+Number=3
 Rows=1
 
-[Effect-shakecursor]
-Magnification=2
-
 [Plugins]
-blurEnabled=true
-fadeEnabled=true
-krohnkiteEnabled=false
 poloniumEnabled=true
-scaleEnabled=false
-
-[Script-polonium]
-Borders=3
-InsertionPoint=1
-KeepTiledBelow=false
-TilePopups=true
 
 [Tiling]
 padding=4
 
-[Tiling][07956b97-fbfd-508c-bd6a-764d1be6785a]
-tiles={"layoutDirection":"horizontal","tiles":[]}
-
 [Tiling][2e7eba93-292d-5fc0-a3f5-cfbd0f10255b]
 tiles={"layoutDirection":"horizontal","tiles":[]}
-
-[Tiling][b2fbf82f-f285-5bab-8985-f363ffe689c5]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][da53263c-c0b8-5b74-b4ec-332858e57e43]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][fca7d628-b7ed-5289-ac85-7e6c2c19e393]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Xwayland]
 Scale=1

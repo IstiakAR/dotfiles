@@ -132,29 +132,18 @@ ForegroundNormal=144,144,171
 ForegroundPositive=166,218,149
 ForegroundVisited=198,160,246
 
-[DirSelect Dialog]
-DirSelectDialog Size=842,571
-
 [General]
 ColorSchemeHash=34bd8bad1192a8d612892100d65539ea91e87b50
-TerminalApplication=kitty
-TerminalService=kitty.desktop
-UseSystemBell=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=SpaceMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 font=SpaceMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=SpaceMono Nerd Font Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=SpaceMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 smallestReadableFont=SpaceMono Nerd Font,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont=SpaceMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
-Theme=Sweet-Blue-Filled
-
-[KDE]
-LookAndFeelPackage=Scratchy
-ShowDeleteCommand=false
-widgetStyle=Oxygen
+Theme=candy-icons
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -173,11 +162,8 @@ Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
-Speedbar Width=162
+Speedbar Width=165
 View Style=DetailTree
-
-[PreviewSettings]
-MaximumRemoteSize=0
 
 [WM]
 activeBackground=24,25,38

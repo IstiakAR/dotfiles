@@ -141,13 +141,6 @@ location=6
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
-[Containments][190][Applets][193]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][190][Applets][193][Configuration][General]
-launchers=
-
 [Containments][190][Applets][236]
 immutability=1
 plugin=org.kde.plasma.kickoff
@@ -199,7 +192,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][190][Applets][242][Configuration]
-PreloadWeight=21
+PreloadWeight=18
 popupHeight=286
 popupWidth=276
 
@@ -278,7 +271,7 @@ plugin=org.kde.plasma.systemmonitor
 
 [Containments][190][Applets][252][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=80
+PreloadWeight=85
 popupHeight=216
 popupWidth=217
 
@@ -306,17 +299,6 @@ memory/physical/usedPercent=120,97,91
 highPrioritySensorIds=["memory/physical/usedPercent"]
 totalSensors=[]
 
-[Containments][190][Applets][255]
-immutability=1
-plugin=org.kde.plasma.plasm6desktopindicator
-
-[Containments][190][Applets][255][Configuration][ConfigDialog]
-DialogHeight=704
-DialogWidth=720
-
-[Containments][190][Applets][255][Configuration][General]
-showAddDesktop=true
-
 [Containments][190][Applets][256]
 immutability=1
 plugin=org.kde.plasma.panelspacer
@@ -325,8 +307,16 @@ plugin=org.kde.plasma.panelspacer
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][190][Applets][259]
+immutability=1
+plugin=org.kde.plasma.plasm6desktopindicator
+
+[Containments][190][Applets][259][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][190][General]
-AppletOrder=236;255;257;193;256;248;241;245;240;242;252;251;244;243;237
+AppletOrder=236;259;257;256;248;241;245;240;242;252;251;244;243;237
 
 [Containments][196]
 activityId=
@@ -594,11 +584,10 @@ PreloadWeight=42
 extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.printmanager
 knownItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.printmanager
 
-[Containments][77]
-ItemGeometries-1536x864=
+[Containments][258]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=4bffb651-a514-4b8a-9144-d97196f08001
+activityId=27194f8f-9683-41e0-8974-eeed3c00db11
 formfactor=0
 immutability=1
 lastScreen=0
@@ -606,18 +595,11 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][77][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+[Containments][8][Applets][22][Configuration]
+PreloadWeight=18
 
-[Containments][77][General]
-ToolBoxButtonState=top
-ToolBoxButtonX=438
-ToolBoxButtonY=45
-
-[Containments][77][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/SafeLanding/
-SlidePaths=/usr/share/wallpapers/
+[Containments][8][Applets][23][Configuration]
+PreloadWeight=23
 
 [Containments][86]
 activityId=
@@ -755,7 +737,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][98][Applets][99][Configuration][General]
-launchers=applications:thunar.desktop,applications:systemsettings.desktop,applications:kitty.desktop,applications:firefox.desktop,applications:org.kde.discover.desktop
+launchers=applications:thunar.desktop,applications:systemsettings.desktop,applications:firefox-developer-edition.desktop,applications:kitty.desktop,applications:org.kde.discover.desktop
 
 [Containments][98][ConfigDialog]
 DialogHeight=78
