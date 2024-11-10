@@ -1,3 +1,8 @@
+-- Run java program in a terminal with <F8>
+vim.api.nvim_set_keymap("n", "<F8>",
+  ":w<CR>:lcd %:h<CR>:belowright 15split | terminal javac % && java %:t:r || echo 'Compilation failed'<CR>i",
+  { noremap = true, silent = true })
+
 --Save file with <F9>
 vim.api.nvim_set_keymap("n", "<F9>", ":w<CR>", { noremap = true, silent = true })
 
