@@ -156,6 +156,7 @@ alias ytm="youtube-viewer -n --no-video-info --player=mpvt"
 alias wfdownloader="cd ~/WFDownloader && nohup java -jar WFDownloaderApp.jar & disown && exit"
 alias fileOnly="find . -maxdepth 1 -not -type d"
 
+alias nas='nvim ~/Documents/mains/main.asm'
 alias ncpp='nvim ~/Documents/mains/main.cpp'
 alias ngo='nvim ~/Documents/mains/main.go'
 alias njava='nvim ~/Documents/mains/Main.java'
@@ -167,6 +168,7 @@ alias nrust='nvim ~/Documents/mains/main.rs'
 alias nts='nvim ~/Documents/mains/main.ts'
 alias nkt='nvim ~/Documents/mains/main.kt'
 
+alias ras='cd ~/Documents/mains && nasm main.asm -f elf64 -o main.o && ld main.o -o main && ./main'
 alias rcpp='cd ~/Documents/mains && g++ main.cpp -o main && ./main'
 alias rgo='cd ~/Documents/mains && go run main.go'
 alias rjava='cd ~/Documents/mains && javac Main.java && java Main'
