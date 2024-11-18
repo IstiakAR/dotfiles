@@ -12,4 +12,16 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>tap-extract</icon>
+	<name>Unzip to Folder</name>
+	<submenu></submenu>
+	<unique-id>1731505081196099-1</unique-id>
+	<command>bn=`basename -s .zip %n`;mkdir &quot;$bn&quot;&amp;&amp;unzip -d&quot;$bn&quot; -qqnXK %f</command>
+	<description>extract in a new directory</description>
+	<range>*</range>
+	<patterns>.zip</patterns>
+	<directories/>
+	<other-files/>
+</action>
 </actions>

@@ -155,6 +155,7 @@ alias yt="youtube-viewer"
 alias ytm="youtube-viewer -n --no-video-info --player=mpvt"
 alias wfdownloader="cd ~/WFDownloader && nohup java -jar WFDownloaderApp.jar & disown && exit"
 alias fileOnly="find . -maxdepth 1 -not -type d"
+alias fontSync="sudo fc-cache -f -v"
 
 alias nas='nvim ~/Documents/mains/main.asm'
 alias ncpp='nvim ~/Documents/mains/main.cpp'
