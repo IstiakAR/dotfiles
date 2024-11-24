@@ -5,7 +5,7 @@ vim.api.nvim_set_keymap("n", "<F1>",
 
 --Run C++ program in a terminal with <F8>
 vim.api.nvim_set_keymap("n", "<F8>",
-  ":w<CR>:lcd %:h<CR>:belowright 10split | terminal g++ % -o main && ./main || echo 'Compilation failed'<CR>i",
+  ":w<CR>:lcd %:h<CR>:belowright 12split | terminal bash -c 'g++ % -o main && { ./main || echo -e \"\\033[31mRuntime error: $?\\033[0m\"; } || echo -e \"\\033[31mCompilation failed\\033[0m\" && g++ % -o main'<CR>i",
   { noremap = true, silent = true })
 
 --Save file with <F9>
