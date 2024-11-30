@@ -43,8 +43,6 @@ return {
         -- https://github.com/DavidAnson/markdownlint
         -- https://docs.getwoke.tech/
         markdown = { "alex", "markdownlint", "woke" },
-        -- https://www.shellcheck.net/
-        sh = { "shellcheck" },
         -- https://github.com/terraform-linters/tflint
         -- https://github.com/aquasecurity/trivy (originally https://github.com/aquasecurity/tfsec)
         terraform = { "tflint", "trivy" },
@@ -53,9 +51,7 @@ return {
         -- https://github.com/adrienverge/yamllint https://yamllint.readthedocs.io/en/stable/rules.html
         -- https://github.com/stoplightio/spectral
         -- yaml = { "actionlint", "yamllint", "spectral" },
-        -- https://www.shellcheck.net/
-        -- https://www.zsh.org/
-        zsh = { "shellcheck", "zsh" },
+        ruby = { "rubocop" },
       }
 
       -- Spectral requires a ruleset in the current directory
