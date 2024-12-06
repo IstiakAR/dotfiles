@@ -2,19 +2,26 @@
 Id_1=c5785781-4a05-4bc6-b6e8-0f620d3fc13d
 Id_2=aca92de3-24b6-4e5b-bf83-621507223ee1
 Id_3=0ecd8c99-53dc-46c0-948f-cd70f6fdabb0
-Name_2=New Desktop
-Name_3=New Desktop
 Number=3
 Rows=1
 
 [Plugins]
-poloniumEnabled=true
+kzonesEnabled=false
+poloniumEnabled=false
+tilerEnabled=true
+togglewindowEnabled=true
+
+[Script-polonium]
+InsertionPoint=1
 
 [Tiling]
 padding=4
 
 [Tiling][2e7eba93-292d-5fc0-a3f5-cfbd0f10255b]
 tiles={"layoutDirection":"horizontal","tiles":[]}
+
+[Tiling][da53263c-c0b8-5b74-b4ec-332858e57e43]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.5}]}
 
 [Xwayland]
 Scale=1

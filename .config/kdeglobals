@@ -134,6 +134,8 @@ ForegroundVisited=198,160,246
 
 [General]
 ColorSchemeHash=34bd8bad1192a8d612892100d65539ea91e87b50
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=SpaceMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
@@ -163,7 +165,7 @@ Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=165
-View Style=DetailTree
+View Style=Simple
 
 [WM]
 activeBackground=24,25,38
