@@ -169,12 +169,15 @@ PreloadWeight=100
 popupHeight=360
 popupWidth=342
 
+[Containments][190][Applets][237][Configuration][General]
+currentDetailsTab=details
+
 [Containments][190][Applets][240]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][190][Applets][240][Configuration]
-PreloadWeight=70
+PreloadWeight=75
 popupHeight=180
 popupWidth=360
 
@@ -183,7 +186,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][190][Applets][241][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 popupHeight=432
 popupWidth=432
 
@@ -193,8 +196,8 @@ plugin=org.kde.plasma.weather
 
 [Containments][190][Applets][242][Configuration]
 PreloadWeight=0
-popupHeight=286
-popupWidth=276
+popupHeight=444
+popupWidth=286
 
 [Containments][190][Applets][242][Configuration][ConfigDialog]
 DialogHeight=540
@@ -214,7 +217,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][190][Applets][243][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 popupHeight=378
 popupWidth=432
 
@@ -226,7 +229,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][190][Applets][244][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 popupHeight=432
 popupWidth=324
 
@@ -235,7 +238,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][190][Applets][245][Configuration]
-PreloadWeight=65
+PreloadWeight=90
 popupHeight=432
 popupWidth=432
 
@@ -244,7 +247,7 @@ immutability=1
 plugin=org.kde.plasma_applet_dict
 
 [Containments][190][Applets][248][Configuration]
-PreloadWeight=70
+PreloadWeight=75
 popupHeight=432
 popupWidth=432
 
@@ -257,7 +260,7 @@ immutability=1
 plugin=org.kde.plasma.notes
 
 [Containments][190][Applets][251][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 popupHeight=450
 popupWidth=450
 
@@ -271,7 +274,7 @@ plugin=org.kde.plasma.systemmonitor
 
 [Containments][190][Applets][252][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=90
+PreloadWeight=95
 popupHeight=216
 popupWidth=217
 
@@ -320,7 +323,7 @@ immutability=1
 plugin=split-clock
 
 [Containments][190][Applets][261][Configuration]
-PreloadWeight=60
+PreloadWeight=75
 popupHeight=450
 popupWidth=560
 
@@ -337,7 +340,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][190][Applets][262][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 popupHeight=303
 popupWidth=360
 
@@ -626,7 +629,7 @@ positions={"1920x1080":["3"\\,"17"\\,"desktop:/IDA 9.0.desktop"\\,"2"\\,"3"]}
 sortMode=-1
 
 [Containments][258][Wallpaper][org.kde.image][General]
-Image=/home/rhyme/Pictures/wallpapers/Aesthetic/tree.jpg
+Image=/home/rhyme/Pictures/wallpapers/Mountains/bus-bridge-forest.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][8][Applets][22][Configuration]
@@ -771,7 +774,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][98][Applets][99][Configuration][General]
-launchers=applications:thunar.desktop,applications:systemsettings.desktop,applications:firefox-developer-edition.desktop,applications:kitty.desktop,applications:org.kde.discover.desktop
+launchers=applications:thunar.desktop,applications:systemsettings.desktop,applications:firefox-developer-edition.desktop,applications:kitty.desktop,applications:org.kde.konsole.desktop,applications:org.kde.discover.desktop
 
 [Containments][98][ConfigDialog]
 DialogHeight=78
