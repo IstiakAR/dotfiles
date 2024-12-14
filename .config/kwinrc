@@ -9,8 +9,8 @@ Rows=1
 better-quick-tiles-for-plasma-6Enabled=false
 com.github.tsoernes.kwin-quick-tile-2Enabled=false
 ktileEnabled=false
-kzonesEnabled=true
-poloniumEnabled=false
+kzonesEnabled=false
+poloniumEnabled=true
 tilerEnabled=true
 togglewindowEnabled=true
 
@@ -24,7 +24,7 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Tiling][da53263c-c0b8-5b74-b4ec-332858e57e43]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.5}]}
+tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Xwayland]
 Scale=1

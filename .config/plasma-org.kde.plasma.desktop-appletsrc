@@ -340,7 +340,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][190][Applets][262][Configuration]
-PreloadWeight=60
+PreloadWeight=70
 popupHeight=303
 popupWidth=360
 
@@ -629,7 +629,7 @@ positions={"1920x1080":["3"\\,"17"\\,"desktop:/IDA 9.0.desktop"\\,"2"\\,"3"]}
 sortMode=-1
 
 [Containments][258][Wallpaper][org.kde.image][General]
-Image=/home/rhyme/Pictures/wallpapers/Mountains/bus-bridge-forest.jpg
+Image=/home/rhyme/Pictures/wallpapers/Aesthetic/car_on_mars.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][8][Applets][22][Configuration]

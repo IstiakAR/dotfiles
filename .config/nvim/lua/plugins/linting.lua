@@ -42,7 +42,7 @@ return {
         -- https://alexjs.com/
         -- https://github.com/DavidAnson/markdownlint
         -- https://docs.getwoke.tech/
-        markdown = { "alex", "markdownlint", "woke" },
+        -- markdown = { "alex", "markdownlint", "woke" },
         -- https://github.com/terraform-linters/tflint
         -- https://github.com/aquasecurity/trivy (originally https://github.com/aquasecurity/tfsec)
         terraform = { "tflint", "trivy" },
