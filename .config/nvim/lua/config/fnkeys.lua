@@ -16,7 +16,7 @@ vim.api.nvim_set_keymap("n", "<F8>",
 
 --Run Python in a terminal with <F9>
 vim.api.nvim_set_keymap("n", "<F9>",
-  ":w<CR>:lcd %:h<CR>:belowright 12split | terminal python *.py <CR>i",
+  ":w<CR>:lcd %:h<CR>:belowright 12split | terminal python % <CR>i",
   { noremap = true, silent = true })
 
 --Run Ruby in a terminal with <F10>

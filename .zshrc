@@ -181,7 +181,10 @@ alias rrust='cd ~/Documents/mains && rustc main.rs && ./main'
 alias rts='cd ~/Documents/mains && tsc main.ts'
 alias rkt='cd ~/Documents/mains && kotlinc main.kt && ./main'
 
-# Created by `pipx` on 2024-06-23 19:11:27
+alias jp='cd ~/Documents/JAVA_PROJECT &&
+javac -d bin -cp "lib/*" $(find src -name "*.java") &&
+java --module-path lib --add-modules javafx.controls -cp bin main/Main'
+
 export PATH="$PATH:/home/rhyme/.local/bin"
 export PATH="$PATH:/home/rhyme/.local/share/gem/ruby/3.3.0/bin"
 

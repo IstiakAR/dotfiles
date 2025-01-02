@@ -1,6 +1,7 @@
 ###AUTOSTART
 exec ~/.scripts/random_wallpaper_i3.sh &
 exec copyq &
+# exec --no-startup-id xautolock -time 30 -locker 'systemctl suspend' -notify 1200 -notifier 'i3lock -c 000000 | xset dpms force off' &
 
 ### Variables for settings (This makes changing them WAY easyer!) ###
 set $mod                             Mod4
@@ -63,9 +64,9 @@ bindsym $mod+v exec --no-startup-id ~/.local/bin/rofi-copyq
 exec_always --no-startup-id $wm_setting_app_compositor
 
 ## Screenshots
-bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/Screenshots/$(date)_maim"
-bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date)_maim"
-bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshots/$(date)_maim"
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/Screenshots/$(date)_maim.png"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date)_maim.png"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshots/$(date)_maim.png"
 
 ## Clipboard Screenshots
 bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
@@ -228,7 +229,7 @@ bindsym $mod+$smod+r restart
 bindsym $mod+$smod+q exec --no-startup-id "pgrep -x i3-nagbar && pkill -x i3-nagbar || i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' \
 -B 'Shut Down' 'systemctl poweroff' \
 -B 'Reboot' 'systemctl reboot' \
--B 'Lock Screen' 'i3lock -c 000000' \
+-B 'Suspend' 'pkill -x i3-nagbar && systemctl suspend' \
+-B 'Lock Screen' 'pkill -x i3-nagbar && i3lock -c 000000' \
 -B 'Yes, Exit i3' 'i3-msg exit'
-
 

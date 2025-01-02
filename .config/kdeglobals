@@ -135,7 +135,7 @@ ForegroundVisited=198,160,246
 [General]
 ColorSchemeHash=34bd8bad1192a8d612892100d65539ea91e87b50
 TerminalApplication=kitty
-TerminalService=kitty.desktop
+TerminalService=/home/rhyme/.local/share/applications/kitty-2.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=SpaceMono Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
