@@ -1,8 +1,8 @@
 ## Installation
 
-### Neccessay packages
+### Necessary packages
 ```bash
-sudo pacman -S git btop zsh curl wget stow grim cliphist dunst firefox-developer-edition kitty neovim nwg-look rofi waybar unzip swww swaync swaybg thunar tree zed blueberry eza nm-connection-editor reflector vlc mpv ruby ruby-irb fzf ark zathura okular gimp btop w3m gtk2 gtk3 gtk4 qt6ct fastfetch
+sudo pacman -S ark binwalk blueberry bluetuith bluez btop cliphist copyq curl dunst eza fastfetch feh firefox-developer-edition fzf gimp grim gtk2 gtk3 gtk4 git ghidra gnu-netcat gsimplecal gwenview i3 i3locks hyprlock hyprland kitty konsole mpv neovim nm-connection-editor nwg-look loupe picom pdfcrack python-pwntools maim okular reflector rofi ruby ruby-irb rz-cutter stow swaybg swaync swww tidy thunar tree unzip vlc w3m waybar wget wine wireshark-qt xautolock yazi zathura zed zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
 
 ### Install yay
@@ -21,7 +21,7 @@ yay -S pacseek
 
 ### Install rest
 ```bash
-yay -S pokemon-colorscripts-git ani-cli wtf youtube-viewer
+yay -S ani-cli hyprshade moosync-bin pokemon-colorscripts-git pycdc-git wtf youtube-viewer zen-browser-bin
 ```
 
 ### zsh & plugins 
