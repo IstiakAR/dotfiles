@@ -31,5 +31,5 @@ vim.api.nvim_set_keymap("n", "<F11>",
 
 -- Run JavaFX project in a terminal with <F12>
 vim.api.nvim_set_keymap("n", "<F12>",
-  ":w<CR>:execute ':terminal (cd ~/Documents/JAVA_PROJECT && javac -d bin -cp \"lib/*\" $(find src -name \"*.java\") && java --module-path lib --add-modules javafx.controls,javafx.graphics,javafx.media -cp \"bin:lib/*\" Main)' | startinsert<CR>",
+  ":w<CR>:execute ':terminal (cd ~/Documents/JAVA_PROJECT && javac -d bin -cp \"lib/*\" $(find src -name \"*.java\") && java --module-path lib --add-modules javafx.controls,javafx.graphics,javafx.media -cp \"bin:lib/*\" main.Main)' | startinsert<CR>",
   { noremap = true, silent = true })

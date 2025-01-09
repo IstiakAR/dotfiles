@@ -1,6 +1,7 @@
 ###AUTOSTART
 exec ~/.scripts/random_wallpaper_i3.sh &
 exec copyq &
+exec ollama serve &
 # exec --no-startup-id xautolock -time 30 -locker 'systemctl suspend' -notify 1200 -notifier 'i3lock -c 000000 | xset dpms force off' &
 
 ### Variables for settings (This makes changing them WAY easyer!) ###
@@ -59,6 +60,7 @@ bindsym $mod+e exec $wm_setting_app_file_manager
 bindsym $mod+w exec ~/.scripts/wallpaperi3
 bindsym $mod+l exec "i3lock -c 000000"
 bindsym $mod+v exec --no-startup-id ~/.local/bin/rofi-copyq
+bindsym Ctrl+$amod+w exec "pgrep -x i3bar && pkill -x i3bar || i3bar"
 
 # Run a window compositor (for effects like transparency or full VSync)
 exec_always --no-startup-id $wm_setting_app_compositor
@@ -107,6 +109,16 @@ set $ws7  "    7    "
 set $ws8  "    8    "
 set $ws9  "    9    "
 set $ws10 "    10    "
+set $ws11 "    11    "
+set $ws12 "    12    "
+set $ws13 "    13    "
+set $ws14 "    14    "
+set $ws15 "    15    "
+set $ws16 "    16    "
+set $ws17 "    17    "
+set $ws18 "    18    "
+set $ws19 "    19    "
+set $ws20 "    20    "
 
 # Switch to workspace n
 bindsym $mod+1 workspace $ws1
@@ -119,6 +131,16 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+bindsym $mod+$amod+1 workspace $ws11
+bindsym $mod+$amod+2 workspace $ws12
+bindsym $mod+$amod+3 workspace $ws13
+bindsym $mod+$amod+4 workspace $ws14
+bindsym $mod+$amod+5 workspace $ws15
+bindsym $mod+$amod+6 workspace $ws16
+bindsym $mod+$amod+7 workspace $ws17
+bindsym $mod+$amod+8 workspace $ws18
+bindsym $mod+$amod+9 workspace $ws19
+bindsym $mod+$amod+0 workspace $ws20
 
 bindsym $amod+Tab workspace next
 bindsym $amod+Shift+Tab workspace prev
