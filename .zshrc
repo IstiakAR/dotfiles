@@ -183,7 +183,7 @@ alias rkt='cd ~/Documents/mains && kotlinc main.kt && ./main'
 
 alias jp='cd ~/Documents/JAVA_PROJECT &&
 javac -d bin -cp "lib/*" $(find src -name "*.java") &&
-java --module-path lib --add-modules javafx.controls -cp bin main/Main'
+java --module-path lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics -cp bin:res main/Main'
 
 export PATH="$PATH:/home/rhyme/.local/bin"
 export PATH="$PATH:/home/rhyme/.local/share/gem/ruby/3.3.0/bin"
