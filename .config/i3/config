@@ -245,7 +245,8 @@ font $wm_setting_font
 floating_modifier $mod
 
 bindsym $mod+$smod+f fullscreen toggle
-bindsym $mod+p floating toggle
+bindsym $mod+$smod+space floating toggle
+for_window [title="Social Media"] floating enable
 bindsym $mod+q kill
 bindsym $mod+$smod+r restart
 bindsym $mod+$smod+q exec --no-startup-id "pgrep -x i3-nagbar && pkill -x i3-nagbar || i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' \
