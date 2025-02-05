@@ -6,8 +6,8 @@ return {
 
       cmp.setup({
         sources = {
-          { name = "nvim_lsp" },
           { name = "codeium" },
+          { name = "nvim_lsp" },
         },
       })
     end,

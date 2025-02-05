@@ -82,6 +82,7 @@ plugins=(
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zoxide
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -181,11 +182,20 @@ alias rrust='cd ~/Documents/mains && rustc main.rs && ./main'
 alias rts='cd ~/Documents/mains && tsc main.ts'
 alias rkt='cd ~/Documents/mains && kotlinc main.kt && ./main'
 
-alias jp='cd ~/Documents/JAVA_PROJECT &&
+alias jp='cd ~/Documents/Social-Media/ &&
 javac -d bin -cp "lib/*" $(find src -name "*.java") &&
-java --module-path lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics -cp bin:res main/Main'
+java --module-path lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics -cp "bin:res:lib/*" main/Main'
 
 export PATH="$PATH:/home/rhyme/.local/bin"
 export PATH="$PATH:/home/rhyme/.local/share/gem/ruby/3.3.0/bin"
 
 export EDITOR=nvim
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

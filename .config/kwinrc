@@ -10,7 +10,7 @@ better-quick-tiles-for-plasma-6Enabled=false
 com.github.tsoernes.kwin-quick-tile-2Enabled=false
 ktileEnabled=false
 kzonesEnabled=false
-poloniumEnabled=true
+poloniumEnabled=false
 tilerEnabled=true
 togglewindowEnabled=true
 

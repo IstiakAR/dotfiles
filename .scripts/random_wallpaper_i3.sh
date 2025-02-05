@@ -19,7 +19,7 @@ fi
 PICS=($(find "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o  -iname \*.webp -o -iname \*.gif \) | sort ))
 
 # Select a random wallpaper
-randomNumber=$(( ($(date +%s) + RANDOM) + $$ ))
+randomNumber=$(( $(date +%s%N) ^ RANDOM ^ $$ ^ $(od -An -N2 -i /dev/urandom | tr -d ' ') + RANDOM) * RANDOM * 1000)
 randomPicture="${PICS[$(( randomNumber % ${#PICS[@]} ))]}"
 
 feh --bg-fill "$randomPicture"

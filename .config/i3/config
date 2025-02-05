@@ -52,7 +52,7 @@ set $bar_color_workspace_urgent_fg   #2E3440
 
 ### Applications ###
 
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Tab exec $wm_setting_app_terminal
 bindsym $mod+F exec $wm_setting_app_browser
 bindsym $mod+space exec $wm_setting_app_launcher

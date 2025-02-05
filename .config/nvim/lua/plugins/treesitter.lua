@@ -1,5 +1,5 @@
 vim.filetype.add({
-  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
 
 vim.bo.commentstring = "# %s"
@@ -84,6 +84,9 @@ return {
 						},
 					},
 				},
+				modules = {},
+				sync_install = false,
+				ignore_install = {},
 			})
 		end,
 	},
