@@ -33,3 +33,31 @@ vim.api.nvim_set_keymap("n", "<F11>",
 vim.api.nvim_set_keymap("n", "<F12>",
   ":w<CR>:execute ':terminal (cd ~/Documents/JAVA_PROJECT && javac -d bin -cp \"lib/*\" $(find src -name \"*.java\") && java --module-path lib --add-modules javafx.base,javafx.controls,javafx.graphics,javafx.fxml -cp bin:res main.Main)' | startinsert<CR>",
   { noremap = true, silent = true })
+
+vim.keymap.set("n", "<C-CR>", function() run_file() end, { noremap = true, silent = true })
+
+function run_file()
+  vim.cmd("w")                     -- Save the file
+  vim.cmd("lcd %:h")               -- Change to file's directory
+
+  local ext = vim.fn.expand("%:e") -- Get file extension
+  local cmd = ""
+
+  if ext == "cpp" then
+    cmd =
+    "bash -c 'g++ % -o main && { ./main || echo -e \"\\033[31mRuntime error: $?\\033[0m\"; } || echo -e \"\\033[31mCompilation failed\\033[0m\"'"
+  elseif ext == "py" then
+    cmd = "python %"
+  elseif ext == "rb" then
+    cmd = "ruby -e 'Dir[\"**/*.rb\"].each { |file| load file }'"
+  elseif ext == "java" then
+    cmd = "javac % && java %:t:r || echo 'Compilation failed'"
+  elseif ext == "js" then
+    cmd = "node %"
+  else
+    vim.notify("No runner configured for this file type", vim.log.levels.INFO)
+    return
+  end
+
+  vim.cmd("belowright 12split | terminal " .. cmd)
+end
