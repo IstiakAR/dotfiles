@@ -2,13 +2,17 @@
 
 ### Necessary packages
 ```bash
-sudo pacman -S ark binwalk blueberry bluetuith bluez btop cliphist copyq curl dunst eza fastfetch feh firefox-developer-edition fzf gimp grim gtk2 gtk3 gtk4 git ghidra gnu-netcat gsimplecal gwenview i3 i3locks hyprlock hyprland kitty konsole mpv neovim nm-connection-editor nwg-look picom pdfcrack python-pwntools maim okular reflector rofi rz-cutter stow swaybg swaync swww tidy thunar tree unzip vlc w3m waybar wget wireshark-qt xautolock yazi zsh zsh-autosuggestions zsh-syntax-highlighting
+sudo pacman -S ark blueberry bluetuith bluez btop cliphist copyq curl dunst eza fastfetch feh firefox-developer-edition fzf gimp grim gtk2 gtk3 gtk4 git gsimplecal gwenview i3 i3locks hyprlock hyprland kitty konsole mpv neovim nm-connection-editor nwg-look picom maim okular reflector rofi stow swaybg swaync swww tidy thunar tree unzip vlc w3m waybar wget wireshark-qt xautolock yazi zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
 ### Python packages
 ```bash
 sudo pacman -S python-seaborn python-scikit-learn python-pillow python-pip python-pipx python-django python-flask python-numpy python-pandas python-requests python-beautifulsoup4
 ```
 
+### CTF tools
+```bash
+sudo pacma -S binwalk ghidra gnu-netcat pdfcrack python-pwntools rz-cutter pwndbg
+```
 
 ### Install yay
 ```bash
