@@ -2,8 +2,13 @@
 
 ### Necessary packages
 ```bash
-sudo pacman -S ark binwalk blueberry bluetuith bluez btop cliphist copyq curl dunst eza fastfetch feh firefox-developer-edition fzf gimp grim gtk2 gtk3 gtk4 git ghidra gnu-netcat gsimplecal gwenview i3 i3locks hyprlock hyprland kitty konsole mpv neovim nm-connection-editor nwg-look loupe picom pdfcrack python-pwntools maim okular reflector rofi ruby ruby-irb rz-cutter stow swaybg swaync swww tidy thunar tree unzip vlc w3m waybar wget wine wireshark-qt xautolock yazi zathura zed zsh zsh-autosuggestions zsh-syntax-highlighting
+sudo pacman -S ark binwalk blueberry bluetuith bluez btop cliphist copyq curl dunst eza fastfetch feh firefox-developer-edition fzf gimp grim gtk2 gtk3 gtk4 git ghidra gnu-netcat gsimplecal gwenview i3 i3locks hyprlock hyprland kitty konsole mpv neovim nm-connection-editor nwg-look picom pdfcrack python-pwntools maim okular reflector rofi rz-cutter stow swaybg swaync swww tidy thunar tree unzip vlc w3m waybar wget wireshark-qt xautolock yazi zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
+### Python packages
+```bash
+sudo pacman -S python-seaborn python-scikit-learn python-pillow python-pip python-pipx python-django python-flask python-numpy python-pandas python-requests python-beautifulsoup4
+```
+
 
 ### Install yay
 ```bash
@@ -21,7 +26,7 @@ yay -S pacseek
 
 ### Install rest
 ```bash
-yay -S ani-cli hyprshade moosync-bin pokemon-colorscripts-git pycdc-git wtf youtube-viewer zen-browser-bin
+yay -S hyprshade pokemon-colorscripts-git pycdc-git wtf
 ```
 
 ### zsh & plugins 
