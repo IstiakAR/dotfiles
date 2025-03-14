@@ -31,3 +31,5 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("i", "<c-;>", "<cmd>call codeium#Cycle()<CR>", { silent = true })
 vim.keymap.set("i", "<c-,>", "<cmd>call codeium#Accept()<CR>", { silent = true })
 vim.keymap.set("i", "<c-x>", "<cmd>call codeium#Clear()<CR>", { silent = true })
+
+-- vim.keymap.set('n', 'P', "\"_dP", { noremap = true })

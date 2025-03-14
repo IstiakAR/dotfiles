@@ -219,8 +219,8 @@
       "format-wifi": "{icon}",
       "interval": 30,
       "on-click": "~/.scripts/rofi-wifi-menu.sh",
-      "on-click-middle": "rfkill toggle wifi",
-      "on-click-right": "nm-connection-editor",
+      "on-click-right": "rfkill toggle wifi",
+      "on-click-middle": "nm-connection-editor",
       "tooltip": true,
       "tooltip-format": "interface:\t{ifname}\n\nconnected to {essid} at {signalStrength}% strength",
       "tooltip-format-disconnected": "interface: {ifname}\ndisconnected"
