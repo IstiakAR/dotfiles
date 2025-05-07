@@ -165,6 +165,7 @@ alias njava='nvim ~/Documents/mains/Main.java'
 alias njs='nvim ~/Documents/mains/main.js'
 alias nlua='nvim ~/Documents/mains/main.lua'
 alias npy='nvim ~/Documents/mains/main.py'
+alias npy1='nvim ~/Documents/mains/main1.py'
 alias nruby='nvim ~/Documents/mains/main.rb'
 alias nrust='nvim ~/Documents/mains/main.rs'
 alias nts='nvim ~/Documents/mains/main.ts'
@@ -188,6 +189,13 @@ java --module-path lib --add-modules javafx.base,javafx.controls,javafx.fxml,jav
 
 export PATH="$PATH:/home/rhyme/.local/bin"
 export PATH="$PATH:/home/rhyme/.local/share/gem/ruby/3.3.0/bin"
+export PATH="$PATH:/home/rhyme/flutter/bin"
+
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin"
+
 
 export EDITOR=nvim
 
@@ -198,4 +206,8 @@ function y() {
 		builtin cd -- "$cwd"
 	fi
 	rm -f -- "$tmp"
+}
+
+visum() {
+  bash /usr/share/visum/scripts/visum.sh $1 > /dev/null 2>&1
 }

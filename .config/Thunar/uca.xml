@@ -6,23 +6,10 @@
 	<submenu></submenu>
 	<unique-id>1718533655737753-1</unique-id>
 	<command>kitty --directory %f</command>
-	<description>Example for a custom action</description>
+	<description></description>
 	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
-</action>
-<action>
-	<icon>tap-extract</icon>
-	<name>Unzip to Folder</name>
-	<submenu></submenu>
-	<unique-id>1731505081196099-1</unique-id>
-	<command>mkdir -p &quot;$(basename &quot;%n&quot; .zip)&quot; &amp;&amp; unzip &quot;%f&quot; -d &quot;$(basename &quot;%n&quot; .zip)&quot;
-</command>
-	<description>extract in a new directory</description>
-	<range>*</range>
-	<patterns>.zip</patterns>
-	<directories/>
-	<other-files/>
 </action>
 </actions>

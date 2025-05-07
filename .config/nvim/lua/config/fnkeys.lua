@@ -45,7 +45,7 @@ function run_file()
 
   if ext == "cpp" then
     cmd =
-    "bash -c 'g++ % -o main && { ./main || echo -e \"\\033[31mRuntime error: $?\\033[0m\"; } || echo -e \"\\033[31mCompilation failed\\033[0m\"'"
+    "bash -c 'g++ % -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wduplicated-cond -Wlogical-op -fsanitize=undefined -o main && { ./main || echo -e \"\\033[31mRuntime error: $?\\033[0m\"; } || echo -e \"\\033[31mCompilation failed\\033[0m\"'"
   elseif ext == "py" then
     cmd = "python %"
   elseif ext == "rb" then

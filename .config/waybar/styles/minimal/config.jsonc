@@ -13,6 +13,7 @@
       "clock"
     ],
     "modules-right": [
+      "custom/notes",
       "group/sys-settings",
       "group/sys-tray",
       "custom/powermenu"
@@ -364,6 +365,11 @@
       "min": 0,
       "orientation": "horizontal",
       "device": "intel_backlight"
+    },
+    "custom/notes":{
+      "format":" ",
+      "on-click":"com.vixalien.sticky",
+      "tooltip":false
     }
   }
 ]

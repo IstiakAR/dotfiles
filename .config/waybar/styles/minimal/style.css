@@ -75,9 +75,17 @@ box#sys-tray {
 }
 
 box#sys-settings {
-	
 	margin: 6px 4px;
 	background-color: @tbase;
+}
+
+#custom-notes{
+  color: @corn;
+  background-color: @tbase;
+	padding: 2px 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left:6px;
 }
 
 #bluetooth.icon,

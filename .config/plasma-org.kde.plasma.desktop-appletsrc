@@ -625,7 +625,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][258][General]
-positions={"1920x1080":["1"\\,"17"\\,"desktop:/trash-can.desktop"\\,"0"\\,"3"\\,"desktop:/network.desktop"\\,"0"\\,"2"\\,"desktop:/user-home.desktop"\\,"0"\\,"0"\\,"desktop:/computer.desktop"\\,"0"\\,"1"]}
+positions={"1920x1080":["1","17"]}
 sortMode=-1
 
 [Containments][258][Wallpaper][org.kde.image][General]
@@ -802,4 +802,4 @@ panelWidgetsWithTray=luisbocanegra.panel.colorizer,Panel colorizer,desktop|org.k
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/user-home.desktop,0,27194f8f-9683-41e0-8974-eeed3c00db11,desktop:/IDA Free 9.0.desktop,0,27194f8f-9683-41e0-8974-eeed3c00db11,desktop:/trash-can.desktop,0,27194f8f-9683-41e0-8974-eeed3c00db11,desktop:/network.desktop,0,27194f8f-9683-41e0-8974-eeed3c00db11,desktop:/computer.desktop,0,27194f8f-9683-41e0-8974-eeed3c00db11
+screenMapping=desktop:/IDA Free 9.0.desktop,0,27194f8f-9683-41e0-8974-eeed3c00db11
