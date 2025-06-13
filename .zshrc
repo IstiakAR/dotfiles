@@ -211,3 +211,6 @@ function y() {
 visum() {
   bash /usr/share/visum/scripts/visum.sh $1 > /dev/null 2>&1
 }
+
+export PGDATA=/var/lib/postgres/data
+

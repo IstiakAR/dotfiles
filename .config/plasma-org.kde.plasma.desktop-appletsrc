@@ -774,7 +774,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][98][Applets][99][Configuration][General]
-launchers=applications:thunar.desktop,applications:systemsettings.desktop,applications:firefox-developer-edition.desktop,applications:kitty.desktop,applications:org.kde.konsole.desktop,applications:org.kde.discover.desktop
+launchers=applications:thunar.desktop,applications:systemsettings.desktop,applications:firefox-developer-edition.desktop,applications:kitty.desktop,applications:org.kde.discover.desktop
 
 [Containments][98][ConfigDialog]
 DialogHeight=78
