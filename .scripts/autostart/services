@@ -16,11 +16,10 @@ hypridle &
 wl-clip-persist --clipboard regular &
 wl-paste --watch cliphist store &
 
-"$HOME"/dotfiles/.scripts/random_wallpaper.sh &
 
 systemctl --user daemon-reload&
 systemctl --user enable --now random_wallpaper.timer&
-
+systemctl --user restart random_wallpaper.service&
 
 ###currectly unavailable
 
