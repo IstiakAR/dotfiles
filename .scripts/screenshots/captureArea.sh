@@ -1,5 +1,16 @@
 #!/bin/bash
 
-grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +'%s_grim.png') &&
-	notify-send -e "Screenshot taken" -i /usr/share/icons/Papirus-Dark/22x22/devices/camera-photo.svg -t 100
+# Define save location
+filename=~/Pictures/Screenshots/$(date +'%s_grim.png')
 
+# Take screenshot
+grim -g "$(slurp)" "$filename" &&
+
+  # Copy to clipboard
+  wl-copy <"$filename" &&
+
+  # Optional: if clipshist requires manual import
+  # clipshist add "$filename"
+
+  # Notify
+  notify-send -e "Screenshot taken" -i /usr/share/icons/Papirus-Dark/22x22/devices/camera-photo.svg -t 100
