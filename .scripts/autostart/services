@@ -7,8 +7,8 @@ swww-daemon --format xrgb &
 waybar &
 
 # Notification Daemon
-# swaync &
-dunst &
+swaync &
+# dunst &
 
 # Idle daemon to screen lock
 hypridle &

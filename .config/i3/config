@@ -1,7 +1,8 @@
 ###AUTOSTART
 exec ~/.scripts/random_wallpaper_i3.sh &
 exec copyq &
-exec ollama serve &
+exec swaync &
+# exec ollama serve &
 # exec --no-startup-id xautolock -time 30 -locker 'systemctl suspend' -notify 1200 -notifier 'i3lock -c 000000 | xset dpms force off' &
 
 ### Variables for settings (This makes changing them WAY easyer!) ###
