@@ -1,10 +1,11 @@
-// vim: set ft=glsl:
-
+#version 320 es
 precision highp float;
-varying highp vec2 v_texcoord;
-uniform highp sampler2D tex;
+in vec2 v_texcoord;
+uniform sampler2D tex;
 
 #define STRENGTH 0.0027
+
+out vec4 fragColor;
 
 void main() {
     vec2 center = vec2(0.5, 0.5);
@@ -17,8 +18,8 @@ void main() {
     vec2 redOffset = vec2(distortedOffset.x, distortedOffset.y);
     vec2 blueOffset = vec2(distortedOffset.x, distortedOffset.y);
 
-    vec4 redColor = texture2D(tex, v_texcoord + redOffset);
-    vec4 blueColor = texture2D(tex, v_texcoord + blueOffset);
+    vec4 redColor = texture(tex, v_texcoord + redOffset); // changed
+    vec4 blueColor = texture(tex, v_texcoord + blueOffset); // changed
 
-    gl_FragColor = vec4(redColor.r, texture2D(tex, v_texcoord).g, blueColor.b, 1.0);
+    fragColor = vec4(redColor.r, texture(tex, v_texcoord).g, blueColor.b, 1.0); // changed
 }

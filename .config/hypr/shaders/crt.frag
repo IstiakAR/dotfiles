@@ -1,9 +1,9 @@
-//modified version of [this shader](https://github.com/wessles/GLSL-CRT/blob/master/shader.frag)
-
-precision mediump float;
-varying vec2 v_texcoord;
-
+#version 320 es
+precision highp float;
+in vec2 v_texcoord;
 uniform sampler2D tex;
+
+out vec4 fragColor;
 
 void main() {
 	vec2 tc = vec2(v_texcoord.x, v_texcoord.y);
@@ -34,5 +34,5 @@ void main() {
 		cta = vec4(0.0);
 
 	// Apply
-	gl_FragColor = cta;
+	fragColor = cta;
 }

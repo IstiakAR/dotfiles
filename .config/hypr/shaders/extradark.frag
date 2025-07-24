@@ -1,10 +1,9 @@
-// vim: set ft=glsl:
-// blue light filter shader
-// values from https://reshade.me/forum/shader-discussion/3673-blue-light-filter-similar-to-f-lux
-
-precision mediump float;
-varying vec2 v_texcoord;
+#version 320 es
+precision highp float;
+in vec2 v_texcoord;
 uniform sampler2D tex;
+
+out vec4 fragColor;
 
 void main() {
 
@@ -17,5 +16,5 @@ void main() {
     // blue
     pixColor[2] *= 0.5;
 
-    gl_FragColor = pixColor;
+    fragColor = pixColor;
 }

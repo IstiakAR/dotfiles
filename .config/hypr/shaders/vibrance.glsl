@@ -1,7 +1,6 @@
-// from https://github.com/hyprwm/Hyprland/issues/1140#issuecomment-1614863627
-
+#version 320 es
 precision highp float;
-varying vec2 v_texcoord;
+in vec2 v_texcoord;
 uniform sampler2D tex;
 
 // see https://github.com/CeeJayDK/SweetFX/blob/a792aee788c6203385a858ebdea82a77f81c67f0/Shaders/Vibrance.fx#L20-L30
@@ -9,6 +8,8 @@ const vec3 VIB_RGB_BALANCE = vec3(1.0, 1.0, 1.0);
 const float VIB_VIBRANCE = 0.75;
 
 const vec3 VIB_coeffVibrance = VIB_RGB_BALANCE * -VIB_VIBRANCE;
+
+out vec4 fragColor;
 
 void main() {
     vec4 pixColor = texture2D(tex, v_texcoord);
@@ -30,5 +31,5 @@ void main() {
     pixColor[1] = mix(luma, color[1], p_col[1]);
     pixColor[2] = mix(luma, color[2], p_col[2]);
 
-    gl_FragColor = pixColor;
+    fragColor = pixColor;
 }
