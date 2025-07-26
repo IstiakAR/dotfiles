@@ -83,6 +83,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     zoxide
+    web-search
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -21,6 +21,18 @@ window > box {
 	
 }
 
+#custom-cava {
+  margin-right: 20px;
+}
+
+#clock {
+  margin: 0 10px;
+}
+
+#custom-music {
+  margin-left: 20px;
+}
+
 #custom-launcher,
 #workspaces,
 #clock,
