@@ -8,9 +8,9 @@
       "hyprland/workspaces#number"
     ],
     "modules-center": [
-      "custom/cava",
-      "clock",
-      "custom/music"
+      // "custom/cava",
+      "clock"
+      // "custom/music"
     ],
     "modules-right": [
       "custom/notes",
