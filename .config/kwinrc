@@ -20,8 +20,17 @@ InsertionPoint=1
 [Tiling]
 padding=4
 
+[Tiling][0ecd8c99-53dc-46c0-948f-cd70f6fdabb0][b1a9bc13-a4f3-4eed-8b2b-81268947320f]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][2e7eba93-292d-5fc0-a3f5-cfbd0f10255b]
 tiles={"layoutDirection":"horizontal","tiles":[]}
+
+[Tiling][aca92de3-24b6-4e5b-bf83-621507223ee1][b1a9bc13-a4f3-4eed-8b2b-81268947320f]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][c5785781-4a05-4bc6-b6e8-0f620d3fc13d][b1a9bc13-a4f3-4eed-8b2b-81268947320f]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][da53263c-c0b8-5b74-b4ec-332858e57e43]
 tiles={"layoutDirection":"horizontal","tiles":[]}

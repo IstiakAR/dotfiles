@@ -2,7 +2,7 @@
 
 ### Necessary packages
 ```bash
-sudo pacman -S ark blueberry bluez btop cliphist copyq curl eza fastfetch feh firefox-developer-edition fzf gimp grim gtk3 gtk4 git gsimplecal gwenview i3 i3locks hyprlock hyprland hypridle kitty mpv neovim neovide nm-connection-editor nwg-look picom maim okular reflector rofi stow swaybg swaync swww thunar tree unzip vlc w3m waybar wget wireshark-qt xautolock yazi zsh zsh-autosuggestions zsh-syntax-highlighting
+sudo pacman -S ark blueberry bluez btop cava cliphist copyq curl eza fastfetch feh firefox-developer-edition fzf gimp grim gtk3 gtk4 git gsimplecal gwenview i3 i3locks hyprlock hyprland hypridle kitty mpv neovim neovide nm-connection-editor nwg-look picom maim okular reflector rofi stow swaybg swaync swww thunar tree unzip vlc w3m waybar wget wireshark-qt xautolock yazi zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
 ### Python packages
 ```bash

@@ -4,6 +4,8 @@
 # Wallpapers Path
 wallpaperDir="$HOME/Pictures/wallpapers"
 themesDir="$HOME/.config/rofi/themes"
+randomIcon="$HOME/.config/rofi/icons/random.png"
+gifIcon="$HOME/.config/rofi/icons/gif.png"
 
 # Transition config
 FPS=60
@@ -38,6 +40,7 @@ executeCommand() {
 
   else
     echo "Neither swww nor swaybg are installed."
+    notify-send "install swaybg or swww" -t 2000
     exit 1
   fi
   rm -rf ~/.cache/swww
@@ -47,15 +50,17 @@ executeCommand() {
 # Show the images
 menu() {
 
-  printf "$randomChoice\n"
+  printf "$randomChoice\x00icon\x1f${randomIcon}\n"
 
   for i in "${!PICS[@]}"; do
+    file="${PICS[$i]}"
+    filename=$(basename "$file")
     # If not *.gif or *.webp, display
     if [[ -z $(echo "${PICS[$i]}" | grep -E '\.gif$|\.webp$') ]]; then
-      printf "$(basename "${PICS[$i]}")\x00icon\x1f${PICS[$i]}\n"
+      printf "${filename}\x00icon\x1f${file}\n"
     else
       # Displaying .gif to indicate animated images
-      printf "$(basename "${PICS[$i]}")\n"
+      printf "${filename}\x00icon\x1f${gifIcon}\n"
     fi
   done
 }
