@@ -1,3 +1,6 @@
+[Activities][LastVirtualDesktop]
+27194f8f-9683-41e0-8974-eeed3c00db11=c5785781-4a05-4bc6-b6e8-0f620d3fc13d
+
 [Desktops]
 Id_1=c5785781-4a05-4bc6-b6e8-0f620d3fc13d
 Id_2=aca92de3-24b6-4e5b-bf83-621507223ee1
@@ -40,4 +43,4 @@ Scale=1
 
 [org.kde.kdecoration2]
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Scratchy
+theme=__aurorae__svg__Sweet-Dark

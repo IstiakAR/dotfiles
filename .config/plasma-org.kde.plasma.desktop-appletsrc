@@ -247,7 +247,7 @@ immutability=1
 plugin=org.kde.plasma_applet_dict
 
 [Containments][190][Applets][248][Configuration]
-PreloadWeight=90
+PreloadWeight=95
 popupHeight=432
 popupWidth=432
 
@@ -323,7 +323,7 @@ immutability=1
 plugin=split-clock
 
 [Containments][190][Applets][261][Configuration]
-PreloadWeight=80
+PreloadWeight=90
 popupHeight=450
 popupWidth=560
 
