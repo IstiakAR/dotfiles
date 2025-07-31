@@ -2,8 +2,9 @@
 
 ### Necessary packages
 ```bash
-sudo pacman -S ark blueberry bluez btop cava cliphist copyq curl eza fastfetch feh firefox-developer-edition fzf gimp grim gtk3 gtk4 git gsimplecal gwenview i3 i3locks hyprlock hyprland hypridle kitty mpv neovim neovide nm-connection-editor nwg-look picom maim okular reflector rofi stow swaybg swaync swww thunar tree unzip vlc w3m waybar wget wireshark-qt xautolock yazi zsh zsh-autosuggestions zsh-syntax-highlighting
+sudo pacman -S ark blueberry bluez btop cava cliphist copyq curl eza fastfetch feh firefox-developer-edition fzf gimp grim gtk3 gtk4 git gsimplecal gwenview i3 i3locks hyprlock hyprland hypridle kitty mpv neovim neovide nm-connection-editor nwg-look picom maim okular rofi stow swaybg swaync swww thunar tree unzip vlc waybar wget xautolock yazi zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
+
 ### Python packages
 ```bash
 sudo pacman -S python-seaborn python-scikit-learn python-pillow python-pip python-flask python-numpy python-pandas python-requests python-beautifulsoup4
@@ -11,7 +12,7 @@ sudo pacman -S python-seaborn python-scikit-learn python-pillow python-pip pytho
 
 ### CTF tools
 ```bash
-sudo pacman -S binwalk ghidra gnu-netcat pdfcrack python-pwntools rz-cutter pwndbg
+sudo pacman -S binwalk ghidra gnu-netcat pdfcrack python-pwntools rz-cutter pwndbg wireshark-qt
 ```
 
 ### Install yay
@@ -28,21 +29,21 @@ makepkg -si
 yay -S pacseek
 ```
 
-### Install rest
+### Install AUR-packages
 ```bash
 yay -S hyprshade pokemon-colorscripts-git wtf
 ```
 
-### zsh & plugins 
+### zsh & plugins
 ```bash
 chsh -s $(which zsh)
 ```
+```
+sudo usermod -s /usr/bin/zsh $USER
+```
 
-[oh-my-zsh](https://ohmyz.sh/#install)
-
-[zsh-interactive-cd](https://github.com/mrjohannchang/zsh-interactive-cd)
-
-[zsh-navigation-tools](https://github.com/z-shell/zsh-navigation-tools)
-
-[z](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z)
+### oh-my-zsh
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
