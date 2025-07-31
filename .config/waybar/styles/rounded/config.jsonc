@@ -172,7 +172,7 @@
       ]
     },
     "hyprland/window": {
-      "max-length": 64,
+      "max-length": 56,
       "format": "󰍹 {}"
     },
     "custom/spotify": {

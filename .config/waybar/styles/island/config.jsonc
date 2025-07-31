@@ -226,8 +226,8 @@
 
 		"custom/launcher": {
 			"format": "",
-		        "on-click": "exec $HOME/.config/hypr/scripts/launcher.sh",
-		        "tooltip": false,
+      "on-click": "exec $HOME/.scripts/launcher.sh",
+      "tooltip": false,
 		},
 
 		"custom/powermenu": {

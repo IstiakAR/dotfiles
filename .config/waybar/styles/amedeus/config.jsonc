@@ -12,8 +12,7 @@
     "modules-left": [
       "hyprland/workspaces",
       "clock#time",
-      "clock#date",
-      "battery"
+      "clock#date"
     ],
     // Set modules for the center of the bar
     "modules-center": [
@@ -25,6 +24,7 @@
       "temperature",
       "cpu",
       "memory",
+      "battery",
       "wireplumber",
       "network"
     ],

@@ -2,8 +2,7 @@
   "layer": "top",
   "height": 37,
   "spacing": 5,
-  // Choose the order of the modules
-  "modules-left": ["image", "hyprland/workspaces", "custom/spotify"],
+  "modules-left": ["hyprland/workspaces", "custom/spotify"],
   "modules-center": ["user"],
   "modules-right": [
     "tray",
@@ -41,12 +40,12 @@
     }
   },
   "user": {
-    "format": "  adxthya | ({work_H}hr {work_M} mins ↑)",
+    "format": "  rhyme | ({work_H}hr {work_M} mins ↑)",
     "interval": 60,
     "height": 23,
     "width": 23,
     "icon": true,
-    "avatar": "/home/adxthya/.config/waybar/pfp.jpeg",
+    "avatar": "/home/rhyme/.config/waybar/styles/adxthya/avatar.jpg"
   },
   "tray": {
     "spacing": 10
@@ -66,15 +65,24 @@
     "tooltip-format": "{capacity}%"
   },
   "network": {
-    "format-wifi": "{ipaddr}",
+    "format-wifi": "{icon} {essid}",
     "format-ethernet": "",
     "format-disconnected": "",
     "tooltip-format": "Connected to {essid}",
     "tooltip-format-ethernet": "{ifname} ",
-    "on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
+    "on-click": "~/.scripts/rofi-wifi-menu.sh",
+    "on-click-right": "nm-connection-editor",
+    "on-click-middle": "rfkill toggle wifi",
+    "format-icons": [
+      "󰤯 ",
+      "󰤟 ",
+      "󰤢 ",
+      "󰤥 ",
+      "󰤨 "
+    ]
   },
   "pulseaudio": {
-    "scroll-step": 5, // %, can be a float
+    "scroll-step": 5,
     "format": "{icon}",
     "format-muted": "",
     "format-icons": {
@@ -83,11 +91,11 @@
     "tooltip-format": "{volume}% volume",
     "on-click": "$HOME/.config/scripts/volume --toggle",
     "on-scroll-up": "$HOME/.config/scripts/volume --inc",
-    "on-scroll-down": "$HOME/.config/scripts/volume --dec",
+    "on-scroll-down": "$HOME/.config/scripts/volume --dec"
   },
   "custom/power": {
     "format": "󰐥",
-    "on-click": "wlogout"
+    "on-click": "wlogout -b 5"
   },
   "power-profiles-daemon": {
     "format": "{icon}",
@@ -100,28 +108,21 @@
       "power-saver": ""
     }
   },
-  "image": {
-    "path": "/home/adxthya/.config/waybar/nix.svg",
-    "size": 20,
-    "interval": 5,
-    "on-click": "brave https://search.nixos.org/packages",
-  },
   "bluetooth": {
-	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-	"format": "󰂯",
-	"format-disabled": "󰂲", // an empty format will hide the module
-	"format-connected": "󰂱",
-	"tooltip-format": "{controller_alias}\t{controller_address}",
-	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"on-click": "blueman-manager",
+    "format": "󰂯",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "blueberry"
   },
   "custom/spotify": {
-        "interval": 1,
-        "return-type": "json",
-        "exec": "~/.config/scripts/music",
-        "on-click": "playerctl play-pause",
-        "escape": true
+    "interval": 1,
+    "return-type": "json",
+    "exec": "~/.config/scripts/music",
+    "on-click": "playerctl play-pause",
+    "escape": true
   },
   "custom/notification": {
     "tooltip": false,
@@ -142,15 +143,5 @@
     "on-click": "sleep 0.1 && swaync-client -t -sw",
     "on-click-right": "sleep 0.1 && swaync-client -d -sw",
     "escape": true
-  },
-  "custom/weather": {
-  "exec": "~/.config/scripts/weather",
-  "interval": 3600,
-  "format": "{}",
-  "return-type": "text"
+  }
 }
-
-}
-}
-
-// vim: ft=jsonc
