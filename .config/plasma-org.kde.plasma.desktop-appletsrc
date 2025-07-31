@@ -177,7 +177,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][190][Applets][240][Configuration]
-PreloadWeight=80
+PreloadWeight=85
 popupHeight=180
 popupWidth=360
 
@@ -186,7 +186,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][190][Applets][241][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 popupHeight=432
 popupWidth=432
 
@@ -195,7 +195,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][190][Applets][242][Configuration]
-PreloadWeight=5
+PreloadWeight=10
 popupHeight=444
 popupWidth=286
 
@@ -217,7 +217,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][190][Applets][243][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 popupHeight=378
 popupWidth=432
 
@@ -229,7 +229,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][190][Applets][244][Configuration]
-PreloadWeight=75
+PreloadWeight=85
 popupHeight=432
 popupWidth=324
 
@@ -238,7 +238,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][190][Applets][245][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 popupHeight=432
 popupWidth=432
 
@@ -247,7 +247,7 @@ immutability=1
 plugin=org.kde.plasma_applet_dict
 
 [Containments][190][Applets][248][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 popupHeight=432
 popupWidth=432
 
@@ -260,7 +260,7 @@ immutability=1
 plugin=org.kde.plasma.notes
 
 [Containments][190][Applets][251][Configuration]
-PreloadWeight=80
+PreloadWeight=90
 popupHeight=450
 popupWidth=450
 
@@ -323,7 +323,7 @@ immutability=1
 plugin=split-clock
 
 [Containments][190][Applets][261][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 popupHeight=450
 popupWidth=560
 
@@ -340,7 +340,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][190][Applets][262][Configuration]
-PreloadWeight=75
+PreloadWeight=100
 popupHeight=303
 popupWidth=360
 
@@ -629,7 +629,7 @@ positions={"1920x1080":["1","17"]}
 sortMode=-1
 
 [Containments][258][Wallpaper][org.kde.image][General]
-Image=/home/rhyme/Pictures/wallpapers/Game/kibry.jpg
+Image=/home/rhyme/Pictures/wallpapers/Aesthetic/tree.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][8][Applets][22][Configuration]
