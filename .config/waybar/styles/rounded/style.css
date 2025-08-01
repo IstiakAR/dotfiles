@@ -18,8 +18,8 @@ window#waybar {
 	margin-top: 2px;
 }
 
-.modules-left { margin-left: 6px; }
-.modules-right { margin-right: 6px; }
+.modules-left { margin-left: 4px; }
+.modules-right { margin-right: 4px; }
 
 #custom-launcher,
 #workspaces,

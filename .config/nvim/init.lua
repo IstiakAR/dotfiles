@@ -8,6 +8,5 @@ require("config.lazy")
 
 require("config.icons")
 require("config.keymaps")
-require("config.neovide")
 require("config.options")
 require("config.fnkeys")

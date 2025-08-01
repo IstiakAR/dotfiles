@@ -8,13 +8,12 @@
       "hyprland/workspaces",
       "custom/right-arrw",
       "custom/spotify",
-      "cava"
+      "custom/cava"
     ],
     "modules-center": [
       "hyprland/window"
     ],
     "modules-right": [
-      "custom/cava",
       "bluetooth",
       "network",
       "group/sys-tray",
@@ -151,8 +150,8 @@
       "return-type": "json"
     },
     "bluetooth": {
-      "format-disabled": "off",
       "format": " {device_alias}",
+      "format-disabled": "󰂲 ",
       "on-click": "blueberry"
     },
     "network": {
@@ -200,33 +199,6 @@
     "custom/right-arrw": {
       "format": "  ",
       "tooltip": false
-    },
-    "group/sys-settings": {
-      "orientation": "horizontal",
-      "modules": [
-        "network#icon",
-        "bluetooth#icon"
-      ]
-    },
-    "network#icon": {
-      "format-wifi": "{icon}",
-      "format-disconnected": "󰖪",
-      "on-click": "~/.config/rofi/scripts/rofi-wifi-menu.sh",
-      "on-click-right": "nm-connection-editor",
-      "format-icons": [
-        "󰤯 ",
-        "󰤟 ",
-        "󰤢 ",
-        "󰤥 ",
-        "󰤨 "
-      ],
-      "tooltip-format": "Connected to {essid}"
-    },
-    "bluetooth#icon": {
-      "format": "",
-      "format-disabled": "",
-      "on-click": "blueberry",
-      "tooltip-format": "{status} to {device_alias}"
     },
     "group/sys-tray": {
       "orientation": "horizontal",
