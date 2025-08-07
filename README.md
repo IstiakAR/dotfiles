@@ -47,3 +47,14 @@ sudo usermod -s /usr/bin/zsh $USER
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+### [!TIP] Fix Neovim not launching inside thunar
+```
+sudo nano /usr/share/applications/nvim.desktop
+```
+Make sure this part is inside the file. Delete tryexec.
+```
+Exec=kitty -e nvim %F
+Terminal=false
+Type=Application
+```
+
