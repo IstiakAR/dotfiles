@@ -135,7 +135,7 @@
       "interval": 60,
       "align": 0,
       "rotate": 0,
-      "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+      "tooltip-format": "<big>{:%d }{calendar}</big>",
       "format": "{:%I:%M %p}",
       "format-alt": "{:%a %b %d}"
     },
