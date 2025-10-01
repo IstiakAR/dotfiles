@@ -74,8 +74,8 @@ return {
           -- print(string.format('event fired: %s', vim.inspect(ev)))
           -- print(vim.bo.filetype)
           if
-              (string.find(ev.file, ".github/workflows/") or string.find(ev.file, ".github/actions/"))
-              and vim.bo.filetype == "yaml"
+            (string.find(ev.file, ".github/workflows/") or string.find(ev.file, ".github/actions/"))
+            and vim.bo.filetype == "yaml"
           then
             lint.try_lint("actionlint")
           elseif vim.bo.filetype == "yaml" then

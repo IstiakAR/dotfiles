@@ -196,7 +196,7 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin"
-
+export PATH="$PATH:$HOME/App/"
 
 export EDITOR=nvim
 
@@ -215,3 +215,5 @@ visum() {
 
 export PGDATA=/var/lib/postgres/data
 
+alias dvwa='docker pull vulnerables/web-dvwa && docker run --rm -d -p 8080:80 --name dvwa vulnerables/web-dvwa && sleep 3 && firefox-developer-edition http://localhost:8080'
+alias dvwa-stop='docker stop dvwa'
