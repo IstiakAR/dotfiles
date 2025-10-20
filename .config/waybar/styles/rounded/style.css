@@ -30,6 +30,7 @@ window#waybar {
 #custom-spotify,
 #network,
 #custom-powermenu,
+#custom-lyrics,
 box#sys-tray {
 	margin: 2px 4px;
 	background-color: @mantle;
@@ -65,7 +66,15 @@ box#sys-tray {
 	padding: 2px 10px;
 	background-color: @mantle;
 }
+#custom-lyrics {
+  color: #1db954;
+  margin: 0 5px;
+  padding: 0 10px;
+}
 
+#custom-lyrics.paused {
+  color: #aaaaaa;
+}
 box#sys-tray {
 	padding: 2px 10px;
 }
