@@ -2,6 +2,8 @@
 exec ~/.scripts/random_wallpaper_i3.sh &
 exec copyq &
 exec swaync &
+exec_always --no-startup-id picom --experimental-backends
+exec polybar &
 # exec ollama serve &
 # exec --no-startup-id xautolock -time 30 -locker 'systemctl suspend' -notify 1200 -notifier 'i3lock -c 000000 | xset dpms force off' &
 
@@ -24,7 +26,7 @@ set $wm_setting_app_launcher         exec rofi -show drun -modi drun -theme ~/.c
 set $wm_setting_app_compositor       picom
 set $wm_setting_app_file_manager     thunar
 
-set $wm_color_border_active_bg       #81A1C1
+set $wm_color_border_active_bg       #3B4252
 set $wm_color_border_active_fg       #3B4252
 set $wm_color_border_inactive_bg     #3B4252
 set $wm_color_border_inactive_fg     #D8DEE9
@@ -51,6 +53,7 @@ set $bar_color_workspace_inactive_fg #2E3440
 set $bar_color_workspace_urgent_bg   #D08770
 set $bar_color_workspace_urgent_fg   #2E3440
 
+
 ### Applications ###
 
 bindsym $mod+Return exec xfce4-terminal
@@ -61,7 +64,7 @@ bindsym $mod+e exec $wm_setting_app_file_manager
 bindsym $mod+w exec ~/.scripts/wallpaperi3
 bindsym $mod+l exec "i3lock -c 000000"
 bindsym $mod+v exec --no-startup-id ~/.local/bin/rofi-copyq
-bindsym Ctrl+$amod+w exec "pgrep -x i3bar && pkill -x i3bar || i3bar"
+bindsym Ctrl+$amod+w exec "pgrep -x polybar && pkill -x polybar || polybar"
 
 # Run a window compositor (for effects like transparency or full VSync)
 exec_always --no-startup-id $wm_setting_app_compositor
@@ -144,7 +147,7 @@ bindsym $mod+$amod+9 workspace $ws19
 bindsym $mod+$amod+0 workspace $ws20
 
 bindsym $amod+Tab workspace next
-bindsym $amod+Shift+Tab workspace prev
+bindsym Ctrl+Tab workspace prev
 
 # Move focused container to workspace n
 bindsym $mod+$smod+1 move container to workspace $ws1
@@ -202,12 +205,12 @@ bindsym $mod+r mode "resize"
 gaps horizontal $wm_setting_gap_width
 gaps vertical   $wm_setting_gap_heigth
 smart_gaps on
+gaps inner 8
 
 ### Borders ###
 default_border pixel $wm_setting_border_size
 default_floating_border pixel $wm_setting_border_size
 smart_borders on
-
 ### Colors ###
 # class                 border                       background                   text                         indicator                    child_border
 client.focused          $wm_color_border_active_bg   $wm_color_border_active_bg   $wm_color_border_active_fg   $wm_color_border_active_bg   $wm_color_border_active_bg
@@ -218,25 +221,25 @@ client.placeholder      $wm_color_border_inactive_bg $wm_color_border_inactive_b
 client.background       $wm_color_background
 
 ### i3bar ###
-bar {
-	position         $bar_setting_position
-	mode             $bar_setting_mode
-	font             $bar_setting_font
-	separator_symbol $bar_setting_separator
-	status_command   $bar_setting_statusCommand
-	tray_output      $bar_setting_trayoutput
-
-	colors {
-		background   $bar_color_background
-		statusline   $bar_color_statusline
-		separator    $bar_color_separator
-
-		focused_workspace  $bar_color_workspace_focused_bg  $bar_color_workspace_focused_bg  $bar_color_workspace_focused_fg
-		active_workspace   $bar_color_workspace_active_bg   $bar_color_workspace_active_bg   $bar_color_workspace_active_fg
-		inactive_workspace $bar_color_workspace_inactive_bg $bar_color_workspace_inactive_bg $bar_color_workspace_inactive_fg
-		urgent_workspace   $bar_color_workspace_urgent_bg   $bar_color_workspace_urgent_bg   $bar_color_workspace_urgent_fg
-	}
-}
+# bar {
+# 	position         $bar_setting_position
+# 	mode             $bar_setting_mode
+# 	font             $bar_setting_font
+# 	separator_symbol $bar_setting_separator
+# 	status_command   $bar_setting_statusCommand
+# 	tray_output      $bar_setting_trayoutput
+#
+# 	colors {
+# 		background   $bar_color_background
+# 		statusline   $bar_color_statusline
+# 		separator    $bar_color_separator
+#
+# 		focused_workspace  $bar_color_workspace_focused_bg  $bar_color_workspace_focused_bg  $bar_color_workspace_focused_fg
+# 		active_workspace   $bar_color_workspace_active_bg   $bar_color_workspace_active_bg   $bar_color_workspace_active_fg
+# 		inactive_workspace $bar_color_workspace_inactive_bg $bar_color_workspace_inactive_bg $bar_color_workspace_inactive_fg
+# 		urgent_workspace   $bar_color_workspace_urgent_bg   $bar_color_workspace_urgent_bg   $bar_color_workspace_urgent_fg
+# 	}
+# }
 
 ### Miscellaneous settings ###
 # Set the font used for titlebars (which are hidden here)
