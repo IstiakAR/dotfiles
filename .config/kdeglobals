@@ -34,48 +34,6 @@ ForegroundNormal=49,54,59
 ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
 
-[Colors:Complementary]
-BackgroundAlternate[$d]
-BackgroundNormal[$d]
-DecorationFocus[$d]
-DecorationHover[$d]
-ForegroundActive[$d]
-ForegroundInactive[$d]
-ForegroundLink[$d]
-ForegroundNegative[$d]
-ForegroundNeutral[$d]
-ForegroundNormal[$d]
-ForegroundPositive[$d]
-ForegroundVisited[$d]
-
-[Colors:Header]
-BackgroundAlternate[$d]
-BackgroundNormal[$d]
-DecorationFocus[$d]
-DecorationHover[$d]
-ForegroundActive[$d]
-ForegroundInactive[$d]
-ForegroundLink[$d]
-ForegroundNegative[$d]
-ForegroundNeutral[$d]
-ForegroundNormal[$d]
-ForegroundPositive[$d]
-ForegroundVisited[$d]
-
-[Colors:Header][Inactive]
-BackgroundAlternate[$d]
-BackgroundNormal[$d]
-DecorationFocus[$d]
-DecorationHover[$d]
-ForegroundActive[$d]
-ForegroundInactive[$d]
-ForegroundLink[$d]
-ForegroundNegative[$d]
-ForegroundNeutral[$d]
-ForegroundNormal[$d]
-ForegroundPositive[$d]
-ForegroundVisited[$d]
-
 [Colors:Selection]
 BackgroundAlternate=233,84,32
 BackgroundNormal=233,84,32
@@ -133,8 +91,8 @@ ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
 
 [DirSelect Dialog]
-DirSelectDialog Size=842,564
-History Items[$e]=file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Sweet-transparent-toolbar
+DirSelectDialog Size=819,593
+History Items[$e]=file:$HOME/Videos,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Sweet-transparent-toolbar
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa2\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
@@ -161,8 +119,6 @@ Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=true
 Decoration position=2
-LocationCombo Completionmode=5
-PathCombo Completionmode=5
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false

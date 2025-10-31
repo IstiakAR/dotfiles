@@ -217,3 +217,4 @@ export PGDATA=/var/lib/postgres/data
 
 alias dvwa='docker pull vulnerables/web-dvwa && docker run --rm -d -p 8080:80 --name dvwa vulnerables/web-dvwa && sleep 3 && firefox-developer-edition http://localhost:8080'
 alias dvwa-stop='docker stop dvwa'
+alias ex='code ~/Documents/python/exploit.py'
