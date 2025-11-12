@@ -172,7 +172,7 @@ alias nrust='nvim ~/Documents/mains/main.rs'
 alias nts='nvim ~/Documents/mains/main.ts'
 alias nkt='nvim ~/Documents/mains/main.kt'
 
-alias ras='cd ~/Documents/mains && nasm main.asm -f elf64 -o main.o && ld main.o -o main && ./main'
+alias ras='cd ~/Documents/mains && nasm -f elf64 main.asm -o main.o && gcc main.o -no-pie -o main && ./main'
 alias rcpp='cd ~/Documents/mains && g++ main.cpp -o main && ./main'
 alias rgo='cd ~/Documents/mains && go run main.go'
 alias rjava='cd ~/Documents/mains && javac Main.java && java Main'
@@ -218,3 +218,4 @@ export PGDATA=/var/lib/postgres/data
 alias dvwa='docker pull vulnerables/web-dvwa && docker run --rm -d -p 8080:80 --name dvwa vulnerables/web-dvwa && sleep 3 && firefox-developer-edition http://localhost:8080'
 alias dvwa-stop='docker stop dvwa'
 alias ex='code ~/Documents/python/exploit.py'
+alias aslr_off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
