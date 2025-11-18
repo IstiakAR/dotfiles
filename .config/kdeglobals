@@ -34,6 +34,12 @@ ForegroundNormal=49,54,59
 ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
 
+[Colors:Complementary]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+
 [Colors:Selection]
 BackgroundAlternate=233,84,32
 BackgroundNormal=233,84,32
@@ -89,11 +95,6 @@ ForegroundNeutral=176,128,0
 ForegroundNormal=49,54,59
 ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
-
-[DirSelect Dialog]
-DirSelectDialog Size=819,593
-History Items[$e]=file:$HOME/Videos,file:$HOME/Downloads/Sweet,file:$HOME/Downloads/Sweet-transparent-toolbar
-Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa2\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
 ColorScheme=KvYaru
