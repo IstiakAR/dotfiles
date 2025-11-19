@@ -82,7 +82,6 @@ plugins=(
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zoxide
     web-search
 )
 
@@ -219,3 +218,5 @@ alias dvwa='docker pull vulnerables/web-dvwa && docker run --rm -d -p 8080:80 --
 alias dvwa-stop='docker stop dvwa'
 alias ex='code ~/Documents/python/exploit.py'
 alias aslr_off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
+eval "$(zoxide init zsh)"
+export PATH=$HOME/.npm-global/bin:$PATH

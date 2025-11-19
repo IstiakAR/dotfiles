@@ -40,6 +40,9 @@ visibilityUnit=2024
 [Applets][242][Configuration][WeatherStation]
 source=wettercom|weather|Dhaka, Dhaka Division, BD|BD0DA0001;Dhaka
 
+[PlasmaTransientsConfig]
+PreloadWeight=68
+
 [PlasmaViews][Panel 161]
 alignment=1
 floating=1
@@ -70,13 +73,15 @@ floating=1
 thickness=34
 
 [PlasmaViews][Panel 2]
+floating=0
+panelLengthMode=0
 panelOpacity=2
 
 [PlasmaViews][Panel 2][Defaults]
 maxLength=400
 minLength=400
 offset=0
-thickness=34
+thickness=40
 
 [PlasmaViews][Panel 2][Horizontal1366]
 thickness=44
@@ -88,6 +93,8 @@ offset=0
 thickness=34
 
 [PlasmaViews][Panel 24]
+floating=0
+panelLengthMode=2
 panelOpacity=2
 
 [PlasmaViews][Panel 24][Defaults]
@@ -100,7 +107,15 @@ maxLength=691
 minLength=58
 thickness=20
 
+[PlasmaViews][Panel 26]
+floating=1
+
+[PlasmaViews][Panel 26][Defaults]
+thickness=40
+
 [PlasmaViews][Panel 30]
+floating=0
+panelLengthMode=2
 panelVisibility=1
 
 [PlasmaViews][Panel 30][Defaults]

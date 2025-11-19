@@ -146,7 +146,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][190][Applets][236][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 popupHeight=530
 popupWidth=715
 
@@ -165,7 +165,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][190][Applets][237][Configuration]
-PreloadWeight=100
+PreloadWeight=91
 popupHeight=360
 popupWidth=342
 
@@ -177,7 +177,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][190][Applets][240][Configuration]
-PreloadWeight=85
+PreloadWeight=61
 popupHeight=180
 popupWidth=360
 
@@ -186,38 +186,16 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][190][Applets][241][Configuration]
-PreloadWeight=80
+PreloadWeight=56
 popupHeight=432
 popupWidth=432
-
-[Containments][190][Applets][242]
-immutability=1
-plugin=org.kde.plasma.weather
-
-[Containments][190][Applets][242][Configuration]
-PreloadWeight=10
-popupHeight=444
-popupWidth=286
-
-[Containments][190][Applets][242][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][190][Applets][242][Configuration][Units]
-pressureUnit=5028
-speedUnit=9002
-temperatureUnit=6001
-visibilityUnit=2024
-
-[Containments][190][Applets][242][Configuration][WeatherStation]
-source=wettercom|weather|Dhaka, Dhaka Division, BD|BD0DA0001;Dhaka
 
 [Containments][190][Applets][243]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][190][Applets][243][Configuration]
-PreloadWeight=80
+PreloadWeight=91
 popupHeight=378
 popupWidth=432
 
@@ -229,7 +207,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][190][Applets][244][Configuration]
-PreloadWeight=85
+PreloadWeight=66
 popupHeight=432
 popupWidth=324
 
@@ -238,29 +216,16 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][190][Applets][245][Configuration]
-PreloadWeight=100
+PreloadWeight=91
 popupHeight=432
 popupWidth=432
-
-[Containments][190][Applets][248]
-immutability=1
-plugin=org.kde.plasma_applet_dict
-
-[Containments][190][Applets][248][Configuration]
-PreloadWeight=100
-popupHeight=432
-popupWidth=432
-
-[Containments][190][Applets][248][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][190][Applets][251]
 immutability=1
 plugin=org.kde.plasma.notes
 
 [Containments][190][Applets][251][Configuration]
-PreloadWeight=90
+PreloadWeight=71
 popupHeight=450
 popupWidth=450
 
@@ -274,7 +239,7 @@ plugin=org.kde.plasma.systemmonitor
 
 [Containments][190][Applets][252][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=100
+PreloadWeight=81
 popupHeight=216
 popupWidth=217
 
@@ -306,24 +271,22 @@ totalSensors=[]
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][190][Applets][256][Configuration]
+PreloadWeight=26
+
 [Containments][190][Applets][257]
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
-[Containments][190][Applets][259]
-immutability=1
-plugin=org.kde.plasma.plasm6desktopindicator
-
-[Containments][190][Applets][259][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+[Containments][190][Applets][257][Configuration]
+PreloadWeight=26
 
 [Containments][190][Applets][261]
 immutability=1
 plugin=split-clock
 
 [Containments][190][Applets][261][Configuration]
-PreloadWeight=100
+PreloadWeight=76
 popupHeight=450
 popupWidth=560
 
@@ -340,23 +303,32 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][190][Applets][262][Configuration]
-PreloadWeight=100
+PreloadWeight=76
 popupHeight=303
 popupWidth=360
 
-[Containments][190][General]
-AppletOrder=236;259;257;261;256;248;241;245;240;242;252;251;244;262;243;237
-
-[Containments][196]
-activityId=
-formfactor=3
+[Containments][190][Applets][263]
 immutability=1
-lastScreen=0
-location=6
-plugin=org.kde.plasma.private.systemtray
-popupHeight=432
-popupWidth=432
-wallpaperplugin=org.kde.image
+plugin=org.kde.plasma.plasm6desktopindicator
+
+[Containments][190][Applets][263][Configuration]
+PreloadWeight=26
+
+[Containments][190][Applets][264]
+immutability=1
+plugin=KdeControlStation
+
+[Containments][190][Applets][264][Configuration]
+PreloadWeight=47
+popupHeight=448
+popupWidth=433
+
+[Containments][190][Configuration]
+PreloadWeight=26
+
+[Containments][190][General]
+AppletOrder=236;263;257;261;256;241;245;240;252;251;244;262;243;237;264
+
 
 [Containments][196][Applets][198]
 immutability=1
@@ -478,7 +450,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][196][Configuration]
-PreloadWeight=42
+PreloadWeight=18
 
 [Containments][196][General]
 extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.cameraindicator,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.bluetooth,org.kde.plasma.weather,org.kde.plasma.brightness
@@ -612,25 +584,6 @@ PreloadWeight=42
 [Containments][219][General]
 extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.printmanager
 knownItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.printmanager
-
-[Containments][258]
-ItemGeometries-1920x1080=
-ItemGeometriesHorizontal=
-activityId=27194f8f-9683-41e0-8974-eeed3c00db11
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][258][General]
-positions={"1920x1080":["1","17"]}
-sortMode=-1
-
-[Containments][258][Wallpaper][org.kde.image][General]
-Image=/home/rhyme/Pictures/wallpapers/Aesthetic/tree.jpg
-SlidePaths=/usr/share/wallpapers/
 
 [Containments][8][Applets][22][Configuration]
 PreloadWeight=18
@@ -769,6 +722,9 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.icontasks
 
+[Containments][98][Applets][99][Configuration]
+PreloadWeight=26
+
 [Containments][98][Applets][99][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
@@ -779,6 +735,9 @@ launchers=applications:thunar.desktop,applications:systemsettings.desktop,applic
 [Containments][98][ConfigDialog]
 DialogHeight=78
 DialogWidth=1920
+
+[Containments][98][Configuration]
+PreloadWeight=26
 
 [Containments][98][General]
 AppletOrder=99

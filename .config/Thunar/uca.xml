@@ -5,7 +5,7 @@
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
 	<unique-id>1718533655737753-1</unique-id>
-	<command>kitty --directory %f</command>
+	<command>kitty --directory %f  -e zsh</command>
 	<description></description>
 	<range></range>
 	<patterns>*</patterns>

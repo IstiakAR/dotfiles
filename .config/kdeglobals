@@ -34,12 +34,6 @@ ForegroundNormal=49,54,59
 ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
 
-[Colors:Complementary]
-BackgroundAlternate[$d]
-BackgroundNormal[$d]
-DecorationFocus[$d]
-DecorationHover[$d]
-
 [Colors:Selection]
 BackgroundAlternate=233,84,32
 BackgroundNormal=233,84,32
@@ -97,8 +91,7 @@ ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
 
 [General]
-ColorScheme=KvYaru
-ColorSchemeHash=404c9c568102723de6d5694e4902840a6a5076c6
+ColorSchemeHash=f3636ad931265643e986586a5584e5fe6ec80714
 TerminalApplication=kitty
 TerminalService=/home/rhyme/.local/share/applications/kitty-3.desktop
 XftHintStyle=hintslight
