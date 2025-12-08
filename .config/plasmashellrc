@@ -40,9 +40,6 @@ visibilityUnit=2024
 [Applets][242][Configuration][WeatherStation]
 source=wettercom|weather|Dhaka, Dhaka Division, BD|BD0DA0001;Dhaka
 
-[PlasmaTransientsConfig]
-PreloadWeight=68
-
 [PlasmaViews][Panel 161]
 alignment=1
 floating=1
