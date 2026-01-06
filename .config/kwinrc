@@ -2,7 +2,11 @@
 Id_1=c5785781-4a05-4bc6-b6e8-0f620d3fc13d
 Id_2=aca92de3-24b6-4e5b-bf83-621507223ee1
 Id_3=0ecd8c99-53dc-46c0-948f-cd70f6fdabb0
-Number=3
+Id_4=3de016e8-5fc0-44a9-b99e-1411af7653dc
+Id_5=22cc488a-cd62-458c-99ae-5b4a21259e9a
+Name_4=New Desktop
+Name_5=New Desktop
+Number=5
 Rows=1
 
 [Plugins]
@@ -26,8 +30,14 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][0ecd8c99-53dc-46c0-948f-cd70f6fdabb0][b1a9bc13-a4f3-4eed-8b2b-81268947320f]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][22cc488a-cd62-458c-99ae-5b4a21259e9a][30345503-fa1d-420b-aa21-49252db0558d]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][2e7eba93-292d-5fc0-a3f5-cfbd0f10255b]
 tiles={"layoutDirection":"horizontal","tiles":[]}
+
+[Tiling][3de016e8-5fc0-44a9-b99e-1411af7653dc][30345503-fa1d-420b-aa21-49252db0558d]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][aca92de3-24b6-4e5b-bf83-621507223ee1][30345503-fa1d-420b-aa21-49252db0558d]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
