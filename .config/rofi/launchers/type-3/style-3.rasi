@@ -9,10 +9,10 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:												"drun";
-  show-icons:                 true;
-  display-drun:               "";
-	drun-display-format:				"{name}";
+	modi:                       "drun";
+    show-icons:                 true;
+    display-drun:               "";
+	drun-display-format:        "{name}";
 }
 
 /*****----- Global Properties -----*****/
@@ -25,8 +25,8 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  true;
-    width:                       1920px;
-    height:                      1080px;
+    width:                       1366px;
+    height:                      768px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -45,7 +45,7 @@ mainbox {
     enabled:                     true;
     spacing:                     100px;
     margin:                      0px;
-    padding:                     70px 225px;
+    padding:                     100px 225px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
     border-color:                @selected;
@@ -57,7 +57,7 @@ mainbox {
 inputbar {
     enabled:                     true;
     spacing:                     10px;
-    margin:                      0% 15%;
+    margin:                      0% 28%;
     padding:                     10px;
     border:                      1px solid;
     border-radius:               6px;
@@ -71,7 +71,6 @@ prompt {
     enabled:                     true;
     background-color:            transparent;
     text-color:                  inherit;
-		padding:										 4px 10px;
 }
 textbox-prompt-colon {
     enabled:                     true;
@@ -87,7 +86,6 @@ entry {
     cursor:                      text;
     placeholder:                 "Search";
     placeholder-color:           inherit;
-		margin:3px;
 }
 
 /*****----- Listview -----*****/
@@ -123,9 +121,9 @@ scrollbar {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    spacing:                     10px;
-    margin:                      20px;
-    padding:                     10px 20px;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     35px 10px;
     border:                      0px solid;
     border-radius:               15px;
     border-color:                @selected;
@@ -145,7 +143,7 @@ element selected.normal {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        48px;
+    size:                        72px;
     cursor:                      inherit;
 }
 element-text {

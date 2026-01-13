@@ -110,6 +110,14 @@ floating=1
 [PlasmaViews][Panel 26][Defaults]
 thickness=40
 
+[PlasmaViews][Panel 29]
+floating=1
+panelLengthMode=1
+panelVisibility=1
+
+[PlasmaViews][Panel 29][Defaults]
+thickness=40
+
 [PlasmaViews][Panel 30]
 floating=0
 panelLengthMode=2

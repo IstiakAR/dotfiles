@@ -179,9 +179,3 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 */
 }
-
-//@theme "/usr/share/rofi/themes/arthur.rasi"
-
-//@theme "/usr/share/rofi/themes/material.rasi"
-
-@theme "/home/rhyme/.config/rofi/themes/simple-tokyonight.rasi"

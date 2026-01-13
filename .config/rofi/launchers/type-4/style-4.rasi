@@ -99,7 +99,6 @@ inputbar {
 }
 
 prompt {
-    padding:                     0px 5px;
     enabled:                     true;
     background-color:            inherit;
     text-color:                  inherit;
