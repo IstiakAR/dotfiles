@@ -9,6 +9,10 @@ Name_5=New Desktop
 Number=5
 Rows=1
 
+[Effect-zoom]
+InitialZoom=1.4748588559558173
+PointerAxisGestureModifiers=
+
 [Plugins]
 better-quick-tiles-for-plasma-6Enabled=false
 com.github.tsoernes.kwin-quick-tile-2Enabled=false
@@ -17,6 +21,7 @@ kzonesEnabled=false
 poloniumEnabled=false
 tilerEnabled=true
 togglewindowEnabled=true
+zoomEnabled=false
 
 [Script-polonium]
 InsertionPoint=1

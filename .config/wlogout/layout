@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "hyprctl dispatch exit 0 || sudo systemctl restart sddm",
+    "action" : "sudo systemctl restart sddm",
     "text" : "Logout",
     "keybind" : "e"
 }
