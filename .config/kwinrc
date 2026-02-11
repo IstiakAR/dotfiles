@@ -64,4 +64,4 @@ Scale=1
 
 [org.kde.kdecoration2]
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Sweet-Dark
+theme=Breeze
