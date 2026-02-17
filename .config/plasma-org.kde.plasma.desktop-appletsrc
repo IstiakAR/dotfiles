@@ -538,6 +538,9 @@ plugin=org.kde.plasma.networkmanagement
 [Containments][2][Applets][7][Applets][13][Configuration]
 PreloadWeight=100
 
+[Containments][2][Applets][7][Applets][13][Configuration][General]
+currentDetailsTab=details
+
 [Containments][2][Applets][7][Applets][14][Configuration]
 PreloadWeight=42
 
@@ -573,7 +576,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][2][Applets][7][Applets][22][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][2][Applets][7][Applets][28]
 immutability=1
