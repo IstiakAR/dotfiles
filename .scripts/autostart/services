@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Wallpaper Backend
-swww-daemon --format xrgb &
+awww-daemon --format xrgb &
 
 # Bar
 waybar &
@@ -9,7 +9,8 @@ waybar &
 # Notification Daemon
 swaync &
 # dunst &
-
+#
+ydotool &
 # Idle daemon to screen lock
 hypridle &
 

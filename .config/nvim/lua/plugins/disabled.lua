@@ -4,4 +4,5 @@ return {
   { "rcarriga/nvim-notify", enabled = true },
   { "Exafunction/codeium.vim", enabled = false },
   { "zbirenbaum/copilot.lua", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
 }

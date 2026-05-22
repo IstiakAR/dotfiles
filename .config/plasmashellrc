@@ -40,35 +40,6 @@ visibilityUnit=2024
 [Applets][242][Configuration][WeatherStation]
 source=wettercom|weather|Dhaka, Dhaka Division, BD|BD0DA0001;Dhaka
 
-[PlasmaViews][Panel 161]
-alignment=1
-floating=1
-panelLengthMode=1
-
-[PlasmaViews][Panel 161][Defaults]
-thickness=32
-
-[PlasmaViews][Panel 174]
-alignment=2
-floating=1
-panelLengthMode=1
-
-[PlasmaViews][Panel 174][Defaults]
-thickness=32
-
-[PlasmaViews][Panel 175]
-floating=1
-panelOpacity=0
-
-[PlasmaViews][Panel 175][Defaults]
-thickness=24
-
-[PlasmaViews][Panel 190]
-floating=1
-
-[PlasmaViews][Panel 190][Defaults]
-thickness=34
-
 [PlasmaViews][Panel 2]
 floating=0
 panelLengthMode=0
@@ -89,27 +60,6 @@ minLength=400
 offset=0
 thickness=34
 
-[PlasmaViews][Panel 24]
-floating=0
-panelLengthMode=2
-panelOpacity=2
-
-[PlasmaViews][Panel 24][Defaults]
-maxLength=691
-minLength=58
-thickness=20
-
-[PlasmaViews][Panel 24][Horizontal1366]
-maxLength=691
-minLength=58
-thickness=20
-
-[PlasmaViews][Panel 26]
-floating=1
-
-[PlasmaViews][Panel 26][Defaults]
-thickness=40
-
 [PlasmaViews][Panel 29]
 floating=1
 panelLengthMode=1
@@ -117,42 +67,6 @@ panelVisibility=1
 
 [PlasmaViews][Panel 29][Defaults]
 thickness=40
-
-[PlasmaViews][Panel 30]
-floating=0
-panelLengthMode=2
-panelVisibility=1
-
-[PlasmaViews][Panel 30][Defaults]
-maxLength=203
-minLength=100
-offset=1133
-thickness=24
-
-[PlasmaViews][Panel 30][Horizontal1366]
-maxLength=203
-minLength=100
-offset=1133
-thickness=24
-
-[PlasmaViews][Panel 78]
-floating=1
-panelLengthMode=0
-
-[PlasmaViews][Panel 78][Defaults]
-thickness=29
-
-[PlasmaViews][Panel 98]
-floating=1
-panelLengthMode=1
-panelVisibility=1
-
-[PlasmaViews][Panel 98][Defaults]
-minLength=73
-thickness=46
-
-[PlasmaViews][Panel 98][Vertical1080]
-minLength=73
 
 [ScreenConnectors]
 0=eDP-1

@@ -8,7 +8,7 @@ FPS=60
 TYPE="any"
 DURATION=3
 BEZIER="0.4,0.2,0.4,1.0"
-SWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
+AWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
 
 # Check if swaybg is running
 if pidof swaybg > /dev/null; then
@@ -23,14 +23,14 @@ randomNumber=$(( $(date +%s%N) ^ RANDOM ^ $$ ^ $(od -An -N2 -i /dev/urandom | tr
 randomPicture="${PICS[$(( randomNumber % ${#PICS[@]} ))]}"
 
 # Execute command according to the wallpaper manager
-if command -v swww &>/dev/null; then
-  swww img "$randomPicture" ${SWWW_PARAMS} && notify-send "Wallpaper Changed" -i "$randomPicture" --app-name=Wallpaper -t 1500
+if command -v awww &>/dev/null; then
+  awww img "$randomPicture" ${AWWW_PARAMS} && notify-send "Wallpaper Changed" -i "$randomPicture" --app-name=Wallpaper -t 1500
 
 elif command -v swaybg &>/dev/null; then
   swaybg -i "$randomPicture" &
 
 else
-  echo "Neither swww nor swaybg are installed."
+  echo "Neither awww nor swaybg are installed."
   exit 1
 fi
 

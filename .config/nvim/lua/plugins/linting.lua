@@ -23,39 +23,19 @@ return {
       local lint = require("lint")
 
       lint.linters_by_ft = {
-        -- https://github.com/codespell-project/codespell
-        -- https://golangci-lint.run/
-        go = { "codespell", "golangcilint" },
-        -- https://htmlhint.com/
-        -- https://www.html-tidy.org/
+        --go = { "codespell", "golangcilint" },
         html = { "htmlhint", "tidy" },
-        -- https://github.com/mantoni/eslint_d.js
-        javascript = { "eslint_d" },
-        -- https://github.com/zaach/jsonlint
+        -- javascript = { "eslint_d" },
         json = { "jsonlint" },
         jsonc = { "jsonlint" },
-        -- DISABLED: https://github.com/mpeterv/luacheck
-        -- Was a problem with folke/neodev plugin
         -- lua = { "luacheck" },
-        -- https://github.com/mrtazz/checkmake
         make = { "checkmake" },
-        -- https://alexjs.com/
-        -- https://github.com/DavidAnson/markdownlint
-        -- https://docs.getwoke.tech/
         -- markdown = { "alex", "markdownlint", "woke" },
-        -- https://github.com/terraform-linters/tflint
-        -- https://github.com/aquasecurity/trivy (originally https://github.com/aquasecurity/tfsec)
-        terraform = { "tflint", "trivy" },
-        -- DISABLED: needed custom logic (see callback function below)
-        -- https://github.com/rhysd/actionlint
-        -- https://github.com/adrienverge/yamllint https://yamllint.readthedocs.io/en/stable/rules.html
-        -- https://github.com/stoplightio/spectral
+        --terraform = { "tflint", "trivy" },
         -- yaml = { "actionlint", "yamllint", "spectral" },
         ruby = { "rubocop" },
       }
 
-      -- Spectral requires a ruleset in the current directory
-      -- Otherwise you have to specify a global one
       lint.linters.spectral.args = {
         "lint",
         "-f",

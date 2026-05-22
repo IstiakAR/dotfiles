@@ -151,7 +151,7 @@ alias cdp='cd Documents/Calculator'
 alias weather='~/.scripts/weather'
 alias fd="cd ~ && cd \$(find . -type d | fzf)"
 alias bsync="sudo bt-dualboot --sync-all --no-backup"
-alias up="sudo pacman -Syu && yay -Syu && sudo flatpak update"
+alias up="sudo pacman -Syu && yay -Syu && sudo flatpak update &"
 alias yt="youtube-viewer"
 alias ytm="youtube-viewer -n --no-video-info --player=mpvt"
 alias wfdownloader="cd ~/WFDownloader && nohup java -jar WFDownloaderApp.jar & disown && exit"
@@ -160,28 +160,15 @@ alias fontSync="sudo fc-cache -f -v"
 
 alias nas='nvim ~/Documents/mains/main.asm'
 alias ncpp='nvim ~/Documents/mains/main.cpp'
-alias ngo='nvim ~/Documents/mains/main.go'
 alias njava='nvim ~/Documents/mains/Main.java'
 alias njs='nvim ~/Documents/mains/main.js'
 alias nlua='nvim ~/Documents/mains/main.lua'
 alias npy='nvim ~/Documents/mains/main.py'
-alias npy1='nvim ~/Documents/mains/main1.py'
 alias nruby='nvim ~/Documents/mains/main.rb'
-alias nrust='nvim ~/Documents/mains/main.rs'
+alias nrust='nvim ~/Documents/mains/main_rust/src/main.rs'
 alias nts='nvim ~/Documents/mains/main.ts'
-alias nkt='nvim ~/Documents/mains/main.kt'
 
 alias ras='cd ~/Documents/mains && nasm -f elf64 main.asm -o main.o && gcc main.o -no-pie -o main && ./main'
-alias rcpp='cd ~/Documents/mains && g++ main.cpp -o main && ./main'
-alias rgo='cd ~/Documents/mains && go run main.go'
-alias rjava='cd ~/Documents/mains && javac Main.java && java Main'
-alias rjs='cd ~/Documents/mains && node main.js'
-alias rlua='cd ~/Documents/mains && lua main.lua'
-alias rpy='cd ~/Documents/mains && python main.py'
-alias rruby='cd ~/Documents/mains && ruby main.rb'
-alias rrust='cd ~/Documents/mains && rustc main.rs && ./main'
-alias rts='cd ~/Documents/mains && tsc main.ts'
-alias rkt='cd ~/Documents/mains && kotlinc main.kt && ./main'
 
 alias jp='cd ~/Documents/Social-Media/ &&
 javac -d bin -cp "lib/*" $(find src -name "*.java") &&
@@ -221,3 +208,4 @@ alias aslr_off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
 eval "$(zoxide init zsh)"
 export PATH=$HOME/.npm-global/bin:$PATH
 export PATH=$HOME/App:$PATH
+alias os161="docker run -it -v ~/App/os161:/home/os161user/os161 marcopalena/polito-os161 /bin/bash"
