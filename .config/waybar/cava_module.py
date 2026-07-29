@@ -99,7 +99,7 @@ def run():
 
     while True:
         media = is_media_playing()
-        print(f"[DEBUG] Media playing? {media}", file=sys.stderr)
+        # print(f"[DEBUG] Media playing? {media}", file=sys.stderr)
 
         if media:
             if process is None:

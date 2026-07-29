@@ -44,6 +44,7 @@ source=wettercom|weather|Dhaka, Dhaka Division, BD|BD0DA0001;Dhaka
 floating=0
 panelLengthMode=0
 panelOpacity=2
+shell=org.kde.plasma.desktop
 
 [PlasmaViews][Panel 2][Defaults]
 maxLength=400
@@ -64,6 +65,7 @@ thickness=34
 floating=1
 panelLengthMode=1
 panelVisibility=1
+shell=org.kde.plasma.desktop
 
 [PlasmaViews][Panel 29][Defaults]
 thickness=40

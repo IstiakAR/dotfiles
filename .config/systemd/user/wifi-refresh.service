@@ -1,0 +1,11 @@
+[Unit]
+Description=Pre-scan WiFi networks for faster app startup
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=nmcli device wifi list --rescan yes
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

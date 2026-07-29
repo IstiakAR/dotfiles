@@ -7,7 +7,6 @@
       "custom/launcher",
       "hyprland/workspaces",
       "custom/right-arrw",
-      "custom/spotify",
       "custom/cava"
     ],
     "modules-center": [
@@ -159,7 +158,7 @@
       "format-ethernet": "󰈁 {essid}",
       "format-disconnected": "󰖪",
       "tooltip-format": "Left Click to Open Rofi Wifi Menu\nRight Click for Advanced Settings",
-      "on-click": "~/.scripts/rofi-wifi-menu.sh",
+      "on-click": "~/App/wifi",
       "on-click-right": "nm-connection-editor",
       "on-click-middle": "rfkill toggle wifi",
       "format-icons": [
@@ -173,14 +172,6 @@
     "hyprland/window": {
       "max-length": 56,
       "format": "󰍹 {}"
-    },
-    "custom/spotify": {
-      "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
-      "format": "  {}",
-      "return-type": "json",
-      "on-click": "playerctl play-pause",
-      "on-scroll-up": "playerctl next",
-      "on-scroll-down": "playerctl previous"
     },
     "custom/lyrics": {
       "return-type": "json",
@@ -277,13 +268,6 @@
         "battery#text"
       ]
     },
-    "group/backlight-grp": {
-      "orientation": "horizontal",
-      "modules": [
-        "backlight",
-        "backlight#text"
-      ]
-    },
     "battery": {
       "interval": 60,
       "states": {
@@ -313,6 +297,25 @@
       "max-length": 25,
       "tooltip": false
     },
+    "group/backlight-grp": {
+      "drawer": {
+        "children-class": "volume",
+        "transition-duration": 500,
+        "transition-left-to-right": true
+      },
+      "orientation": "horizontal",
+      "modules": [
+        "group/backlight",
+        "backlight/slider",
+      ]
+    },
+    "group/backlight": {
+      "orientation": "horizontal",
+      "modules": [
+        "backlight",
+        "backlight#text"
+      ]
+    },
     "backlight": {
       "device": "eDP-1",
       "format": "{icon}",
@@ -330,6 +333,12 @@
       "interval": 15,
       "exec": "",
       "tooltip": false
+    },
+    "backlight/slider": {
+      "max": 100,
+      "min": 0,
+      "orientation": "horizontal",
+      "device": "intel_backlight"
     }
   }
 ]

@@ -179,11 +179,13 @@ export PATH="$PATH:/home/rhyme/.local/share/gem/ruby/3.3.0/bin"
 export PATH="$PATH:/home/rhyme/flutter/bin"
 
 export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin"
 export PATH="$PATH:$HOME/App"
-
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$HOME/mongodb/bin:$PATH"
 export EDITOR=nvim
 
 function y() {
@@ -209,3 +211,7 @@ eval "$(zoxide init zsh)"
 export PATH=$HOME/.npm-global/bin:$PATH
 export PATH=$HOME/App:$PATH
 alias os161="docker run -it -v ~/App/os161:/home/os161user/os161 marcopalena/polito-os161 /bin/bash"
+
+if [[ -f ~/env.zsh ]]; then
+    source ~/env.zsh
+fi

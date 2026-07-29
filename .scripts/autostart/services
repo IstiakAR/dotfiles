@@ -22,6 +22,9 @@ systemctl --user daemon-reload &
 systemctl --user enable --now random_wallpaper.timer &
 systemctl --user restart random_wallpaper.service &
 
+# Polkit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 ###currectly unavailable
 
 # Automounter for removable media
@@ -35,9 +38,6 @@ systemctl --user restart random_wallpaper.service &
 
 # Notify about devices connecting and disconnecting
 # devify &
-
-# Polkit authentication
-# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Audio
 # easyeffects --gapplication-service &
