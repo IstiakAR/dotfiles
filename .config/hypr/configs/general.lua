@@ -1,0 +1,15 @@
+hl.config({
+    general = {
+        gaps_in = 4,
+        gaps_out = 6,
+        border_size = 1,
+        col = {
+            active_border = overlay0,
+            inactive_border = base,
+        },
+        resize_on_border = true,
+        allow_tearing = false,
+        layout = "dwindle",
+    },
+})
+
