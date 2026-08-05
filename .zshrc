@@ -215,3 +215,13 @@ alias os161="docker run -it -v ~/App/os161:/home/os161user/os161 marcopalena/pol
 if [[ -f ~/env.zsh ]]; then
     source ~/env.zsh
 fi
+
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+

@@ -2,7 +2,7 @@ local scripts = "~/.scripts"
 local rofiThemes = "~/.config/rofi"
 
 -- Common Keybinds
-hl.bind("SUPER + Q", hl.dsp.window.kill())
+hl.bind("SUPER + Q", hl.dsp.window.close())
 hl.bind("SUPER + Delete", hl.dsp.exit())
 hl.bind("SUPER + V", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -theme " .. rofiThemes .. "/launchers/type-4/style-1.rasi | cliphist decode | wl-copy"))
 hl.bind("SUPER + P", hl.dsp.window.pseudo())
